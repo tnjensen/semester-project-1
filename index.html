@@ -1,27 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Semester Project 1</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <h1>Welcome to our website</h1>
-        </header>
-        <main>
-            <h2>Sub-headline</h2>
-            <p>Paragraph</p>
-        </main>
-        <footer>
-            <div class="footer-content">
-                Copyright &copy;
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header-content">
+      <h1>Community Science Museum</h1>
+      <label for="menu-btn" class="menu-btn"><i class="fa fa-bars"></i></label>
+      <input type="checkbox" id="menu-btn" />
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <div class="dropdown" onclick="showSubMenu(this)">
+            <li>Explore</li>
+            <a href="#"><i class="fa fa-caret-down"></i></a>  
+            <div class="dropdown-content hidden">
+              <ul>
+                <li><a href="#">For kids</a></li>
+                <li><a href="#">For teachers</a></li>
+                <li><a href="#">Researchers</a></li>
+              </ul>
             </div>
-        </footer>
+          </div>
+          <div class="dropdown" onclick="showSubMenu(this)">
+            <li>Exhibition Spaces</li>
+            <a href="#"><i class="fa fa-caret-down"></i></a> 
+            <div class="dropdown-content hidden">
+              <ul>
+                <li><a href="#">Cosmology</a></li>
+                <li><a href="#">Evolution</a></li>
+                <li><a href="#">Biology and Medicine</a></li>
+                <li><a href="#">Robotics and AI</a></li>
+                <li><a href="#">Ecology</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown" onclick="showSubMenu(this)">
+          <li>Special Events</li>
+          <a href="#"><i class="fa fa-caret-down"></i></a> 
+          <div class="dropdown-content hidden">
+            <ul>
+              <li><a href="#">News</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="dropdown" onclick="showSubMenu(this)">
+          <li>Visit</li>
+          <a href="#"><i class="fa fa-caret-down"></i></a> 
+            <div class="dropdown-content hidden">
+          <ul> 
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Admission</a></li>
+              <li><a href="#">Hours</a></li>
+              <li><a href="#">Accesibility</a></li>
+              <li><a href="#">Food and Drink</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown" onclick="showSubMenu(this)">
+          <li>Get Involved</li>
+          <a href="#"><i class="fa fa-caret-down"></i></a> 
+          <div class="dropdown-content hidden">
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Volunteer</a></li>
+              <li><a href="#">Internships</a></li>
+            </ul>
+        </div>
+      </div>
+      </ul>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="main-content">
+        <h2>Sub-headline</h2>
+        <p>Paragraph</p>
+      </main>
+      <footer>
+        <div class="footer-content">Copyright &copy;</div>
+      </footer>
     </div>
     <script src="script/script.js"></script>
-</body>
+  </body>
 </html>
