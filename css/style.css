@@ -87,7 +87,7 @@ figcaption::before, figcaption::after{
 .fa-bars{
   position: absolute;
   left: 10px;
-  top: 130px;
+  top: 125px;
 }
 #menu-btn:checked ~ div ul {
   display: block;
