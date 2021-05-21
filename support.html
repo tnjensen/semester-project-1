@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Our newly re-opened Community Science Museum, featuring exciting and interactive exhibitions for all ages"
+    />
+    <title>Community Science Museum | Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="site-header">
+        <figure>
+        <a href="index.html">
+          <img src="images/icon-1719742.svg" width="100"
+          class="site-logo" alt="Community Science Logo"/>
+        </a>
+        <figcaption>Explore together</figcaption>
+      </figure>
+        <div class="header-content">
+          <div class="site-branding">
+            <h1>Community Science Museum</h1>
+        </div>
+      </div>
+      <label for="menu-btn" class="menu-btn"><i class="fa fa-bars"></i></label>
+      <input type="checkbox" id="menu-btn" />
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <div class="dropdown" onclick="showSubMenu(this)">
+            <li>Explore</li>
+            <a href="#"><i class="fa fa-caret-down"></i></a>  
+            <div class="dropdown-content hidden">
+              <ul>
+                <li><a href="explore.html#kids">For kids</a></li>
+                <li><a href="explore.html#teachers">For teachers</a></li>
+                <li><a href="explore.html#researchers">Researchers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown" onclick="showSubMenu(this)">
+            <li>Exhibition Spaces</li>
+            <a href="#"><i class="fa fa-caret-down"></i></a> 
+            <div class="dropdown-content hidden">
+              <ul>
+                <li><a href="exhibition.html#cosmology">Cosmology</a></li>
+                <li><a href="exhibition.html#evolution">Evolution</a></li>
+                <li><a href="exhibition.html#biology">Biology and Medicine</a></li>
+                <li><a href="exhibition.html#robotics">Robotics and AI</a></li>
+                <li><a href="exhibition.html#ecology">Ecology</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown" onclick="showSubMenu(this)">
+          <li>Special Events</li>
+          <a href="#"><i class="fa fa-caret-down"></i></a> 
+          <div class="dropdown-content hidden">
+            <ul>
+              <li><a href="news.html">News</a></li>
+            </ul>
+            </div>
+        </div>
+      </div><!--navbar-->
+      </ul>
+    </div><!--site-header-->
+    </header>
+    <div class="wrapper">
+      <main class="main-content">
+        <h1>Special events and exhibitions</h1>
+        <form class="search">
+          <input
+            class="search-field"
+            placeholder="Search..."
+            type="search"
+            role="search"
+          />
+          <a
+            href="search.html"
+            class="search-btn"
+            title="search"
+          >
+            <i class="fa fa-search"></i
+          ></a>
+      </form>
+       <section class="support-content">
+            <h2>Support</h2>
+            <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community. 
+            </p>
+            <p>You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
+        </section>
+        <section class="support-content">
+            <h3>Volunteer</h3>
+            <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum.
+            </p>
+            <p>You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more about how you can get involved.</p>
+        </section>
+        <section class="support-content">
+            <h3>Internships</h3>
+            <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum.
+            </p>
+            <p>You’ll be learning from a number of different academics and people who are passionate about science and sharing it with the wider community.</p>
+        </section>
+        <aside>
+        <div class="signup-form">
+          <h3>Sign up for our newsletter</h3>
+          <form>
+            <input type="text" value="Name" onfocus="if (this.value == 'Name') {this.value=''}" />
+            <input type="email" value="E-mail" onfocus="if (this.value == 'E-mail') {this.value=''}" />
+            <input type="submit" name="submit" value="Sign up">
+          </form>
+        </div><!-- signup-form -->
+      </aside>
+      </main>
+      </div>
+      <footer class="footer">
+        <div class="footer-content">
+          Copyright &copy;
+          <div class="footer-category">
+            Get Involved
+          </div>
+          <div>
+            <p><a href="support.html">Support</a></p>
+            <p><a href="support.html">Volunteer</a></p>
+            <p><a href="support.html">Internships</a></p>
+          </div>
+          <div class="footer-category">
+            Visit
+          </div>
+          <div> 
+              <p><a href="visit.html#location">Location</a></p>
+              <p><a href="visit.html#admission">Admission</a></p>
+              <p><a href="visit.html#hours">Hours</a></p>
+              <p><a href="visit.html#accessibility">Accessibility</a></p>
+              <p><a href="visit.html#food">Food and Drink</a></p>
+              <p><a href="visit.html#shop">Shop</a></p>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com" aria-label="Instagram"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com" aria-label="Twitter"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com" aria-label="FaceBook"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+            </ul>
+          </div><!--footer-nav-->
+        </div><!--footer-content-->
+      </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>

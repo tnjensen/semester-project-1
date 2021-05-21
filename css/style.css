@@ -221,7 +221,7 @@ input[type="submit"]:hover {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.explore-content, .exhibition-content, .events-content, .visit-content{
+.explore-content, .exhibition-content, .events-content, .visit-content, .support-content{
     margin-bottom: 20px;
 }
 .visit-content iframe{
