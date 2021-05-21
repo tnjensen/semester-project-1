@@ -200,24 +200,32 @@ input[type="submit"]:hover {
 .main-content{
     margin: 10px;
 }
-.main-content h1{
+
+.hero img{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-image: no-repeat center;
+    background-size: cover;
+    width: 70%;
 }
 .main-content p{
     width: 80%;
     margin-top: 10px;
 }
 .main-content img{
-   margin-top: 10px;
-   margin-left: 10px;
-   width: 70%;
+    width: 80%;
+    margin-top: 10px;
 }
 .signup-form{
     max-width: 150px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.explore-content, .exhibition-content, .events-content{
+.explore-content, .exhibition-content, .events-content, .visit-content{
     margin-bottom: 20px;
+}
+.visit-content iframe{
+    margin-top: 10px;
 }
 
 /* To enable hover menus */
@@ -313,7 +321,6 @@ footer {
     max-width: 70%;
  }
  .main-content img{
-    max-width: 70%;
  }
   .signup-form{
      max-width: 300px;
