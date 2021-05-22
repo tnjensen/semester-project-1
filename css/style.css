@@ -192,9 +192,9 @@ input[type="submit"]:hover {
     background-color: #AD6A28;
     position: relative;
     left: -5px;
-    top: 2px;
+    top: 3px;
     border-radius: 2px;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .search-btn:hover {
     background-color: #FF9024;
@@ -323,7 +323,6 @@ footer {
     }
     .search-btn {
         font-size: 1.1rem;
-        padding: 1px;
     }
     .main-content{
         margin: 15px;
@@ -383,9 +382,9 @@ footer {
       }
       .search-btn {
         font-size: 1.3rem;
-        padding: 1px 5px;
+        padding: 0 5px;
         position: relative;
-        top: 3px;
+        top: 4px;
         margin: 10px 0;
       }
       .signup-form{
