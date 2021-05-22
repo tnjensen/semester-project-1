@@ -79,6 +79,9 @@ figcaption::before, figcaption::after{
   padding: 10px;
   min-height: 100vh;
 }
+.navbar{
+   
+}
 .navbar ul li {
   margin: 10px;
 }
@@ -97,6 +100,7 @@ figcaption::before, figcaption::after{
 }
 .fa-bars{
   position: absolute;
+  font-size: 1.5rem;
   left: 10px;
   top: 125px;
 }
