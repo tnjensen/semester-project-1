@@ -334,6 +334,7 @@ footer {
     }
     .search-btn {
         font-size: 1.1rem;
+        padding: 1px;
     }
     .main-content{
         margin: 15px;
