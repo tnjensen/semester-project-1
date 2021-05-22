@@ -355,7 +355,7 @@ footer {
     .site-header{
         max-width: 1160px;
         margin:auto;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .main-content{
         margin: 20px;
