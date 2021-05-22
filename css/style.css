@@ -95,12 +95,14 @@ figcaption::before, figcaption::after{
 #menu-btn {
   display: none;
 }
+.menu-btn{
+    font-size: 1.5rem;
+}
 .fa-bars:hover {
   cursor: pointer;
 }
 .fa-bars{
   position: absolute;
-  font-size: 1.5rem;
   left: 10px;
   top: 125px;
 }
