@@ -13,7 +13,7 @@
   margin: 0;
 }
 body {
-  font-family: "Roboto Slab", Geneva, Tahoma, sans-serif;
+  font-family: "Work Sans", Geneva, Tahoma, sans-serif;
   padding: 0;
   margin: 0;
   color: #303030;
@@ -31,6 +31,11 @@ h6 {
 }
 h2{
     font-style: italic;
+    margin: 10px 0;
+    text-decoration: underline;
+}
+h3{
+    font-weight: lighter;
 }
 header {
   padding: 10px;
@@ -47,7 +52,7 @@ header a {
     display: flex;
     flex-direction: row-reverse;
 }
-h1{
+.site-header h1{
     font-weight: lighter;
 }
 .site-logo{
