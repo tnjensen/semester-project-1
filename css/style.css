@@ -83,22 +83,14 @@ figcaption::before, figcaption::after{
   min-height: 100vh;
 }
 .navbar ul{
-    margin-left: 20px;
+  list-style-type: none;
+  display: none;
 }
 .navbar ul li {
-  margin: 10px;
+    padding: 5px 0;
 }
 .navbar a {
   text-decoration: none;
-}
-.navbar .active, .dropdown .active{
-    background-color: #fffefe;
-    color: #303030;
-    padding: 10px;
-}
-.navbar ul {
-  list-style-type: none;
-  display: none;
 }
 #menu-btn {
   display: none;
@@ -125,7 +117,8 @@ figcaption::before, figcaption::after{
   border: none;
 }
 nav{
-    padding-top: 20px;
+    padding: 20px;
+    
 }
 .dropdown {
   list-style-type: none;
@@ -138,10 +131,9 @@ nav{
 }
 .dropdown-content ul{
     text-align: left;
-    padding: 2px 10px 2px 0;
+    padding: 10px;
 }
 .dropdown-content a {
-    
   color: #fffefe;
   text-align: left;
 }
