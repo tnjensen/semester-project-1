@@ -116,10 +116,6 @@ figcaption::before, figcaption::after{
   background: none;
   border: none;
 }
-nav{
-    padding: 20px;
-    
-}
 .dropdown {
   list-style-type: none;
 }
@@ -299,6 +295,9 @@ footer {
   text-decoration: underline;
 }
 @media screen and (min-width: 600px) {
+    body{
+        font-size: 1rem;
+    }
     .site-header{    
         margin: 10px;
         flex-direction: row;
@@ -306,14 +305,20 @@ footer {
     .menu-btn {
         display: none;
     }
+    .navbar{
+        margin-top: 35px;
+        margin-left: 10px;
+    }
     .navbar ul{
         display: inline-flex;
+        justify-content: flex-end;
     }
-    .navbar a{
-        margin-right: 10px;
+    .navbar li{
+      margin-right: 10px; 
     }
     #menu-btn:checked ~ div ul {
         display: inline-flex;
+        justify-content: space-around;
     }
     .dropdown-content {
         position: absolute;
@@ -373,12 +378,10 @@ footer {
 }
 @media screen and (min-width: 900px) {
     body{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .site-header{
         max-width: 1160px;
-        margin:auto;
-        justify-content: space-around;
     }
     .main-content{
         margin: 20px;
