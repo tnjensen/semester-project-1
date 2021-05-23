@@ -133,8 +133,8 @@ figcaption::before, figcaption::after{
   z-index: 10;
 }
 .dropdown-content ul{
-    padding: 5px;
     text-align: left;
+    padding: 2px 10px 2px 0;
 }
 .dropdown-content a {
   color: #fffefe;
