@@ -309,6 +309,9 @@ footer {
     .navbar ul{
         display: inline-flex;
     }
+    .navbar a{
+        margin-right: 10px;
+    }
     #menu-btn:checked ~ div ul {
         display: inline-flex;
     }
