@@ -82,6 +82,12 @@ figcaption::before, figcaption::after{
   padding: 10px;
   min-height: 100vh;
 }
+nav{
+    margin-top: 30px;
+}
+.navbar{
+    margin: 10px;
+}
 .navbar ul{
   list-style-type: none;
   display: none;
