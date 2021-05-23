@@ -14,5 +14,13 @@ dropdownContent.forEach(function(event){
         }
     })
 })
+/* var links = document.querySelector('navbar [href="'+document.URL+'"]');
+
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL) {
+        document.links[i].className = 'active';
+    }
+} */
+
 
 
