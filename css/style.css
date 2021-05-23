@@ -114,7 +114,7 @@ figcaption::before, figcaption::after{
     position: relative;
     left: -5px;
 }
-#menu-btn:checked ~ div ul {
+#menu-btn:checked ~ nav ul {
   display: block;
 }
 .hidden {
