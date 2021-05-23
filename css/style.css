@@ -111,8 +111,8 @@ figcaption::before, figcaption::after{
   cursor: pointer;
 }
 .fa-bars{
-    position: relative;
-    left: -5px;
+    position: absolute;
+    left: 15px;
 }
 #menu-btn:checked ~ nav ul {
   display: block;
@@ -123,6 +123,9 @@ figcaption::before, figcaption::after{
 .drop-btn {
   background: none;
   border: none;
+}
+nav{
+    padding-top: 20px;
 }
 .dropdown {
   list-style-type: none;
@@ -138,6 +141,7 @@ figcaption::before, figcaption::after{
     padding: 2px 10px 2px 0;
 }
 .dropdown-content a {
+    
   color: #fffefe;
   text-align: left;
 }
