@@ -133,7 +133,8 @@ figcaption::before, figcaption::after{
   z-index: 10;
 }
 .dropdown-content ul{
-    padding: 5px 0;
+    padding: 5px;
+    text-align: left;
 }
 .dropdown-content a {
   color: #fffefe;
@@ -142,9 +143,6 @@ figcaption::before, figcaption::after{
 .dropdown-content a:hover {
   background: #fffefe;
   color: #28697d;
-}
-.dropdown-content ul li a {
-  padding: 5px 10px;
 }
 .fa-caret-down:hover {
   cursor: pointer;
