@@ -82,6 +82,9 @@ figcaption::before, figcaption::after{
   padding: 10px;
   min-height: 100vh;
 }
+.wrapper h1{
+    text-align: center;
+}
 nav{
     margin-top: 30px;
 }
@@ -194,7 +197,7 @@ input[type="submit"]:hover {
     color: transparent !important;
   }
   .search {
-    margin: 0;
+    margin: 10px 0;
     font-size: .8rem;
     float: right;
   }
@@ -337,7 +340,7 @@ footer {
         float: left;
     }
     .search {
-        margin: 5px 20px 10px 0;
+        margin: 15px 0;
         float: right;
         font-size: .9rem;
     }
@@ -390,33 +393,31 @@ footer {
         max-width: 1160px;
     }
     .main-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         margin: 20px;
     }
     .main-content img{
        margin: 20px 0;
        width: 80%;
     }
-    .main-content p{
-        width: 100%;
-    }
     .search {
         float: right;
       }
-      .search-field {
-        padding: 5px;
-        max-width: 130px;
-        font-size: 0.7rem;
-      }
-      .search-btn {
-        font-size: 1.3rem;
-        padding: 1px 5px;
-        position: relative;
-        top: 4px;
-        margin: 10px 0;
-      }
-      .signup-form{
-          max-width: 100vw;
-          margin: 20px 0;
-      }
-      
+    .search-field {
+    padding: 5px;
+    max-width: 130px;
+    font-size: 0.7rem;
+    }
+    .search-btn {
+    font-size: 1.3rem;
+    padding: 1px 5px;
+    position: relative;
+    top: 4px;
+    margin: 10px 0;
+    }
+    .signup-form{
+        max-width: 100vw;
+        margin: 20px 0;
+    }   
 }
