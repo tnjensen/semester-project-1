@@ -29,7 +29,9 @@ h5,
 h6 {
   font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
 }
-
+h1{
+    font-size: 1.5rem;
+}
 h2{
     font-weight: lighter;
     margin: 10px 0;
@@ -55,7 +57,7 @@ header a {
 }
 .site-header h1{
     font-weight: lighter;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 .site-logo{
     background-color: #fffefe;
@@ -85,6 +87,7 @@ figcaption::before, figcaption::after{
 .wrapper h1{
     text-align: center;
     margin-top: 10px;
+    font-size: 1.4rem;
 }
 nav{
     margin-top: 30px;
@@ -157,7 +160,7 @@ input[type="email"] {
   height: 25px;
   border: 1px solid #333;
   outline: none;
-  border-radius: 3px;
+  border-radius: 4px;
   opacity: 0.7;
 }
 input[type="submit"] {
@@ -165,7 +168,7 @@ input[type="submit"] {
   height: 25px;
   color: #fffefe;
   margin: 10px 0 15px 0;
-  border-radius: 3px;
+  border-radius: 4px;
   background-color: #ad6a28;
 }
 input[type="submit"]:hover {
@@ -204,7 +207,7 @@ input[type="submit"]:hover {
   }
   .search-field {
     padding: 2px;
-    max-width: 110px;
+    max-width: 90px;
     font-size: 0.7rem;
   }
   .search-btn {
@@ -226,6 +229,7 @@ input[type="submit"]:hover {
 .main-content{
     margin: 10px;
 }
+
 .main-content p{
     width: 100%;
     margin-top: 10px;
@@ -306,6 +310,12 @@ footer {
         margin: 10px;
         flex-direction: row;
     }
+    .site-header h1{
+        font-size: 1.8rem;
+    }
+    .wrapper h1{
+        font-size: 1.7rem;
+    }
     .menu-btn {
         display: none;
     }
@@ -335,7 +345,7 @@ footer {
         float: left;
     }
     .search {
-        margin: 15px 0;
+        margin: 10px 0;
         float: right;
         font-size: .9rem;
     }
@@ -347,9 +357,6 @@ footer {
     .search-btn {
         font-size: 1.1rem;
         padding: 1px;
-    }
-    .main-content img{
-       
     }
     .main-content p{
         max-width: 80%;
@@ -381,6 +388,9 @@ footer {
     .site-header{
         max-width: 1160px;
     }
+    .site-header h1{
+        font-size: 2rem;
+    }
     .main-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -389,6 +399,9 @@ footer {
     .home{
         display: flex;
         flex-direction: column;
+    }
+    .wrapper h1{
+        font-size: 1.9rem;
     }
     .main-content img{
        margin: 30px 0 10px 0;
