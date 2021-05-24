@@ -84,6 +84,7 @@ figcaption::before, figcaption::after{
 }
 .wrapper h1{
     text-align: center;
+    margin-top: 10px;
 }
 nav{
     margin-top: 30px;
@@ -225,20 +226,14 @@ input[type="submit"]:hover {
 .main-content{
     margin: 10px;
 }
-
-.hero img{
-    margin-top: 10px;
-    background-image: no-repeat center;
-    background-size: cover;
-    width: 100%;
-}
 .main-content p{
     width: 100%;
     margin-top: 10px;
 }
 .main-content img{
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
 }
 .signup-form{
     max-width: 150px;
@@ -353,17 +348,11 @@ footer {
         font-size: 1.1rem;
         padding: 1px;
     }
-    .main-content{
-        margin: 15px;
-    }
-    .main-content h1{
-        text-align: center;
-    }
     .main-content img{
-        max-width: 75%;
+       
     }
     .main-content p{
-        max-width: 75%;
+        max-width: 80%;
     }
     .signup-form{
         max-width: 300px;
@@ -397,13 +386,17 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         margin: 20px;
     }
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
     .main-content img{
-       margin: 20px 0;
-       width: 80%;
+       margin: 30px 0 10px 0;
     }
     .search {
         float: right;
-      }
+        margin: 0;
+    }
     .search-field {
     padding: 5px;
     max-width: 130px;
@@ -413,7 +406,7 @@ footer {
     font-size: 1.3rem;
     padding: 1px 5px;
     position: relative;
-    top: 4px;
+    top: 3px;
     margin: 10px 0;
     }
     .signup-form{
