@@ -85,6 +85,7 @@ figcaption::before, figcaption::after{
   min-height: 100vh;
 }
 .wrapper h1{
+    display: none;
     text-align: center;
     margin-top: 10px;
     font-size: 1.4rem;
@@ -201,13 +202,13 @@ input[type="submit"]:hover {
     color: transparent !important;
   }
   .search {
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: .8rem;
     float: right;
   }
   .search-field {
     padding: 2px;
-    max-width: 90px;
+    max-width: 80px;
     font-size: 0.7rem;
   }
   .search-btn {
@@ -215,7 +216,7 @@ input[type="submit"]:hover {
     position: relative;
     left: -5px;
     padding: 1px 2px;
-    top: 2px;
+    top: 1px;
     border-radius: 2px;
     font-size: 1rem;
   }
@@ -314,6 +315,7 @@ footer {
         font-size: 1.8rem;
     }
     .wrapper h1{
+        display: block;
         font-size: 1.7rem;
     }
     .menu-btn {
@@ -357,6 +359,9 @@ footer {
     .search-btn {
         font-size: 1.1rem;
         padding: 1px;
+    }
+    .main-content img{
+        max-width:80% ;
     }
     .main-content p{
         max-width: 80%;
