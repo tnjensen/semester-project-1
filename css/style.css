@@ -327,22 +327,22 @@ footer {
       margin-right: 10px; 
     }
     .search {
-        margin: 10px 0;
+        margin: 0;
         float: right;
         font-size: .9rem;
     }
     .search-field {
-        max-width: 110px;
+        max-width: 100px;
         font-size: 0.7rem;
     }
     .search-btn {
         font-size: 1.1rem;
     }
     .main-content img{
-        max-width:80% ;
+        max-width:70% ;
     }
     .main-content p{
-        max-width: 80%;
+        max-width: 70%;
     }
     .signup-form{
         max-width: 300px;
@@ -390,7 +390,11 @@ footer {
     .wrapper h1{
         font-size: 1.9rem;
     }
+    .main-content p{
+        max-width: 80%;
+    }
     .main-content img{
+        max-width: 80%;
        margin: 30px 0 10px 0;
     }
     .search {
