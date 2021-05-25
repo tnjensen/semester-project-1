@@ -90,71 +90,65 @@ figcaption::before, figcaption::after{
     margin-top: 10px;
     font-size: 1.4rem;
 }
-nav{
-    margin-top: 30px;
-}
 .navbar{
-    margin: 10px;
-}
-.navbar ul{
-  list-style-type: none;
-  display: none;
-}
-.navbar ul li {
+    margin-top: 30px;
     padding: 5px 0;
+}
+.navbar li{
+    text-align:left;
+    padding: 5px;
 }
 .navbar a {
   text-decoration: none;
 }
-#menu-btn {
-  display: none;
+.item{
+    display: none;
 }
-.menu-btn{
+.toggle{
     font-size: 1.5rem;
-    align-self: flex-end;
+    order: 1;
 }
 .fa-bars:hover {
   cursor: pointer;
 }
-.fa-bars{
-    position: absolute;
-    left: 15px;
-}
-#menu-btn:checked ~ nav ul {
-  display: block;
-}
-.hidden {
-  display: none;
-}
-.drop-btn {
+.dropdown{
   background: none;
+  color: #fffefe;
   border: none;
+}
+.item, .toggle {
+  list-style-type: none;  
+}
+.dropdown::after{
+    font-family: "Font Awesome 5 Free";
+    font-size: 1rem;
+    line-height: 16px;
+    font-weight: 900; 
+    padding-left: 5px;
+    content: "\f0d7";
 }
 .dropdown {
   list-style-type: none;
 }
-.dropdown-content {
-  position: absolute;
-  background:#28697d;
-  border-radius: 10px;
-  z-index: 10;
-}
-.dropdown-content ul{
-    text-align: left;
-    padding: 10px;
-}
-.dropdown-content a {
-  color: #fffefe;
-  text-align: left;
-}
-.dropdown-content a:hover {
+.dropdown li a:hover {
   background: #fffefe;
   color: #28697d;
 }
-.fa-caret-down:hover {
-  cursor: pointer;
+.submenu{
+    display: none;
+    list-style-type: none;
+    padding: 5px;
+    z-index: 10;
 }
-
+.submenu-active .submenu{
+    display: block;
+    background: #28697d;
+    position: absolute;
+    border-radius: 5px;
+}
+.active .item {
+    display: block;
+}
 input[type="text"],
 input[type="email"] {
   margin: 4px 0 7px 0;
@@ -180,53 +174,53 @@ input[type="submit"]:hover {
     /* Chrome/Opera/Safari */
     color: #0a3945;
   }
-  ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #0a3945;
-  }
-  :-ms-input-placeholder {
-    /* IE 10+ */
-    color: #0a3945;
-  }
-  :-moz-placeholder {
-    /* Firefox 18- */
-    color: #0a3945;
-  }
-  input:focus::-webkit-input-placeholder {
-    color: transparent !important;
-  }
-  input:focus::-moz-placeholder {
-    color: transparent !important;
-  }
-  input:focus:-moz-placeholder {
-    color: transparent !important;
-  }
-  .search {
-    margin: 5px 0;
-    font-size: .8rem;
-    float: right;
-  }
-  .search-field {
-    padding: 2px;
-    max-width: 80px;
-    font-size: 0.7rem;
-  }
-  .search-btn {
-    background-color: #AD6A28;
-    position: relative;
-    left: -5px;
-    padding: 1px 2px;
-    top: 1px;
-    border-radius: 2px;
-    font-size: 1rem;
-  }
-  .search-btn:hover {
-    background-color: #FF9024;
-  }
-  .fa-search {
-    color: #fffefe;
-    padding: 0px 5px;
-  }
+::-moz-placeholder {
+/* Firefox 19+ */
+color: #0a3945;
+}
+:-ms-input-placeholder {
+/* IE 10+ */
+color: #0a3945;
+}
+:-moz-placeholder {
+/* Firefox 18- */
+color: #0a3945;
+}
+input:focus::-webkit-input-placeholder {
+color: transparent !important;
+}
+input:focus::-moz-placeholder {
+color: transparent !important;
+}
+input:focus:-moz-placeholder {
+color: transparent !important;
+}
+.search {
+margin: 5px 0;
+font-size: .8rem;
+float: right;
+}
+.search-field {
+padding: 2px;
+max-width: 80px;
+font-size: 0.7rem;
+}
+.search-btn {
+background-color: #AD6A28;
+position: relative;
+left: -5px;
+padding: 1px 2px;
+top: 1px;
+border-radius: 2px;
+font-size: 1rem;
+}
+.search-btn:hover {
+background-color: #FF9024;
+}
+.fa-search {
+color: #fffefe;
+padding: 0px 5px;
+}
 .main-content{
     margin: 10px;
 }
@@ -315,36 +309,21 @@ footer {
         font-size: 1.8rem;
     }
     .wrapper h1{
-        /*display: block;*/
         font-size: 1.7rem;
     }
-    .menu-btn {
+    .toggle{
         display: none;
     }
+    .item{
+        display: block;
+    }
     .navbar{
+        display: inline-flex;
         margin-top: 35px;
         margin-left: 10px;
     }
-    .navbar ul{
-        display: inline-flex;
-        justify-content: flex-end;
-    }
     .navbar li{
       margin-right: 10px; 
-    }
-    #menu-btn:checked ~ div ul {
-        display: inline-flex;
-        justify-content: space-around;
-    }
-    .dropdown-content {
-        position: absolute;
-        padding: 0 0 10px 0;
-    }
-    .dropdown-content ul {
-        flex-direction: column;
-    }
-    .dropdown-content ul li a {
-        float: left;
     }
     .search {
         margin: 10px 0;
@@ -395,6 +374,9 @@ footer {
     }
     .site-header h1{
         font-size: 2rem;
+    }
+    .navbar{
+        display: inline-flex;
     }
     .main-content{
         display: grid;

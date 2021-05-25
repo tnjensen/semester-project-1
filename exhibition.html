@@ -14,10 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   </head>
   <body>
     <header>
@@ -34,48 +31,37 @@
             <h1>Community Science Museum</h1>
         </div>
       </div>
-      <div class="navbar">
-        <label for="menu-btn" class="menu-btn"><i class="fa fa-bars"></i></label>
-        <input type="checkbox" id="menu-btn" />
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <div class="dropdown" onclick="showSubMenu(this)">
-              <li>Explore</li>
-              <a href="#"><i class="fa fa-caret-down"></i></a>  
-              <div class="dropdown-content hidden">
-                <ul>
-                  <li><a href="explore.html#kids">For kids</a></li>
-                  <li><a href="explore.html#teachers">For teachers</a></li>
-                  <li><a href="explore.html#researchers">Researchers</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="dropdown" onclick="showSubMenu(this)">
-              <li>Exhibition Spaces</li>
-              <a href="#"><i class="fa fa-caret-down"></i></a> 
-              <div class="dropdown-content hidden">
-                <ul>
-                  <li><a href="exhibition.html#cosmology">Cosmology</a></li>
-                  <li><a href="exhibition.html#evolution">Evolution</a></li>
-                  <li><a href="exhibition.html#biology">Biology and Medicine</a></li>
-                  <li><a href="exhibition.html#robotics">Robotics and AI</a></li>
-                  <li><a href="exhibition.html#ecology">Ecology</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="dropdown" onclick="showSubMenu(this)">
-              <li>Special Events</li>
-              <a href="#"><i class="fa fa-caret-down"></i></a> 
-              <div class="dropdown-content hidden">
-                <ul>
-                  <li><a href="news.html">News</a></li>
-                </ul>
-              </div>
-            </div>
-          </ul>
-        </nav>
-      </div><!--navbar-->
+      <ul class="navbar">
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item dropdown">
+          <a tabindex="0">Explore</a>
+          <!--<a href="#"><i class="fa fa-caret-down"></i></a>-->  
+            <ul class="submenu">
+              <li class="subitem"><a href="explore.html#kids">For kids</a></li>
+              <li class="subitem"><a href="explore.html#teachers">For teachers</a></li>
+              <li class="subitem"><a href="explore.html#researchers">Researchers</a></li>
+            </ul>
+        </li>
+        <li class="item dropdown">
+          <a tabindex="0">Exhibition Spaces</a>
+          <!--<a href="#"><i class="fa fa-caret-down"></i></a>--> 
+            <ul class="submenu">
+              <li class="subitem"><a href="exhibition.html#cosmology">Cosmology</a></li>
+              <li class="subitem"><a href="exhibition.html#evolution">Evolution</a></li>
+              <li class="subitem"><a href="exhibition.html#biology">Biology and Medicine</a></li>
+              <li class="subitem"><a href="exhibition.html#robotics">Robotics and AI</a></li>
+              <li class="subitem"><a href="exhibition.html#ecology">Ecology</a></li>
+            </ul>
+        </li>
+        <li class="item dropdown">
+          <a tabindex="0">Special Events</a>
+          <!--<a href="#"><i class="fa fa-caret-down"></i></a>--> 
+            <ul class="submenu">
+              <li class="subitem"><a href="news.html">News</a></li>
+            </ul>
+        </li>
+        <li class="toggle"><a href="#"><i class="fa fa-bars"></i></a></li>
+      </ul><!--navbar-->
     </div><!--site-header-->
     </header>
     <div class="wrapper">
