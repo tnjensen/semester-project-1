@@ -302,8 +302,8 @@ footer {
         font-size: 1rem;
     }
     .site-header{    
-        margin: 10px;
         flex-direction: row;
+        justify-content: space-around;
     }
     .site-header h1{
         font-size: 1.8rem;
@@ -371,6 +371,7 @@ footer {
     }
     .site-header{
         max-width: 1160px;
+        margin: 0 auto;
     }
     .site-header h1{
         font-size: 2rem;
