@@ -57,6 +57,7 @@ header a {
 }
 .site-header h1{
     font-weight: lighter;
+    margin-top: 5px;
     font-size: 1.6rem;
 }
 .site-logo{
@@ -299,7 +300,7 @@ footer {
         justify-content: space-between;
     }
     .site-header h1{
-        margin-top: 5px;
+        margin-top: 10px;
         font-size: 1.8rem;
     }
     .wrapper h1{
@@ -378,7 +379,7 @@ footer {
         margin: 0 auto;
     }
     .site-header h1{
-        margin-top: 5px;
+        margin-top: 15px;
         font-size: 2rem;
     }
     .navbar{
