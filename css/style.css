@@ -57,7 +57,7 @@ header a {
 }
 .site-header h1{
     font-weight: lighter;
-    margin-top: 5px;
+    margin: 15px;
     font-size: 1.6rem;
 }
 .site-logo{
@@ -104,10 +104,16 @@ figcaption::before, figcaption::after{
 
 .item{
     display: none;
+    max-height: 35px;
 }
-.toggle{
+.item:hover{
+    cursor: pointer;
+}
+.fa-bars{
     font-size: 1.5rem;
     order: 1;
+    position: absolute;
+    top : 20px;
 }
 .fa-bars:hover {
   cursor: pointer;
@@ -128,18 +134,25 @@ figcaption::before, figcaption::after{
     padding-left: 5px;
     content: "\f0d7";
 } */
-.dropdown {
-  list-style-type: none;
-}
-.dropdown li a:hover {
-  background: #fffefe;
-  color: #28697d;
-}
+
 .submenu{
     display: none;
     list-style-type: none;
     padding: 5px;
     z-index: 10;
+}
+.submenu li a:hover {
+    background: #fffefe;
+    color: #28697d;
+  }
+.submenu-active .submenu{
+    display: block;
+    background: #28697d;
+    position: absolute;
+    border-radius: 5px;
+}
+.active .item {
+    display: block;
 }
 
 input[type="text"],
@@ -323,14 +336,7 @@ footer {
       margin-right: 10px; 
     }
     .submenu-active .submenu{
-        display: block;
-        background: #28697d;
-        position: absolute;
-        border-radius: 5px;
-        margin-top: 20px;
-    }
-    .active .item {
-        display: block;
+       margin-top: 20px;
     }
     .search {
         margin: 0;
