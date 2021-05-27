@@ -118,7 +118,7 @@ figcaption::before, figcaption::after{
 .fa-bars:hover {
   cursor: pointer;
 }
-.dropdown{
+.has-dropdown{
   background: none;
   color: #fffefe;
   border: none;
@@ -135,17 +135,17 @@ figcaption::before, figcaption::after{
     content: "\f0d7";
 } */
 
-.submenu{
+.dropdown{
     display: none;
     list-style-type: none;
     padding: 5px;
     z-index: 10;
 }
-.submenu li a:hover {
+.dropdown li a:hover {
     background: #fffefe;
     color: #28697d;
   }
-.submenu-active .submenu{
+.dropdown-active .dropdown{
     display: block;
     background: #28697d;
     position: absolute;
@@ -335,7 +335,7 @@ footer {
     .navbar li{
       margin-right: 10px; 
     }
-    .submenu-active .submenu{
+    .dropdown-active .dropdown{
        margin-top: 20px;
     }
     .search {

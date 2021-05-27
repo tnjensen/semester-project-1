@@ -11,8 +11,8 @@ function toggleMenu() {
     } else {
         menu.classList.add("active");
          
-        // adds the close (x) icon
-        toggle.querySelector("a").innerHTML = "<i class='fa fa-times'></i>";
+       /*  // adds the close (x) icon
+        toggle.querySelector("a").innerHTML = "<i class='fa fa-times'></i>"; */
     }
 }
  
@@ -21,41 +21,41 @@ toggle.addEventListener("click", toggleMenu, false);
 
 const items = document.querySelectorAll(".item");
  
-/* Activate Submenu */
+/* Activate dropdown */
 function toggleItem() {
-  if (this.classList.contains("submenu-active")) {
-    this.classList.remove("submenu-active");
-  } else if (menu.querySelector(".submenu-active")) {
-    menu.querySelector(".submenu-active").classList.remove("submenu-active");
-    this.classList.add("submenu-active");
+  if (this.classList.contains("dropdown-active")) {
+    this.classList.remove("dropdown-active");
+  } else if (menu.querySelector(".dropdown-active")) {
+    menu.querySelector(".dropdown-active").classList.remove("dropdown-active");
+    this.classList.add("dropdown-active");
   } else {
-    this.classList.add("submenu-active");
+    this.classList.add("dropdown-active");
   }
 }
  
 /* Event Listeners */
 for (let item of items) {
-    if (item.querySelector(".submenu")) {
+    if (item.querySelector(".dropdown")) {
       item.addEventListener("click", toggleItem, false);
       item.addEventListener("keypress", toggleItem, false);
     }   
 }
-/* Close Submenu From Anywhere */
-function closeSubmenu(e) {
+/* Close dropdown From Anywhere */
+function closedropdown(e) {
     let isClickInside = menu.contains(e.target);
    
-    if (!isClickInside && menu.querySelector(".submenu-active")) {
-      menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    if (!isClickInside && menu.querySelector(".dropdown-active")) {
+      menu.querySelector(".dropdown-active").classList.remove("dropdown-active");
     }
   }
    
   /* Event listener */
-  document.addEventListener("click", closeSubmenu, false);
+  document.addEventListener("click", closedropdown, false);
 /* const dropElements = document.querySelector('.navbar');
 const dropdownContent = document.querySelectorAll('.dropdown-content');
  */
 /* Shows/hides the dropdown of clicked menu button */
-/* function showSubMenu(a){    
+/* function showdropdown(a){    
     a.getElementsByClassName('dropdown-content').classList.toggle('hidden');  
 } */
 
