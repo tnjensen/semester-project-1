@@ -207,19 +207,18 @@ input:focus:-moz-placeholder {
     float: right;
 }
 .search-field {
-    padding: 2px;
-    max-width: 80px;
-    height: 24px;
+    max-width: 70px;
+    height: 22px;
     font-size: 0.7rem;
 }
 .search-btn {
     background-color: #AD6A28;
     position: relative;
     left: -5px;
-    padding: 2px 2px;
+    padding: 1px 1px;
     top: 2px;
     border-radius: 2px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .search-btn:hover {
     background-color: #FF9024;
