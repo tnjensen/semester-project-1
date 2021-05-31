@@ -1,4 +1,0 @@
-const links = {
-    title: "Explore",
-    
-}
