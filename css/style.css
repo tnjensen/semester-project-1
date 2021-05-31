@@ -111,7 +111,7 @@ figcaption::before, figcaption::after{
     font-size: inherit;
     margin: 0;
 }
-.home .home a, .explore .explore a, .exhibitions .exhibitions a, .events .events a, .support .support a, .visit .visit a{
+.home .home a, .explore .explore-btn, .exhibitions .exhibitions-btn, .events .events-btn, .support .support-section, .visit .visit-section{
     /* background: #fffefe;
     color:#28697d; */
     text-decoration: underline;
