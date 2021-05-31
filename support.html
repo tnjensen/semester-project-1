@@ -8,7 +8,7 @@
       name="description"
       content="Support our newly re-opened Community Science Museum, join the museum's friends society or maybe work as a volunteer"
     />
-    <title>Community Science Museum | Home</title>
+    <title>Community Science Museum | Support</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="support">
     <header>
       <div class="site-header">
         <figure>
@@ -31,37 +31,39 @@
             <h1>Community Science Museum</h1>
         </div>
       </div>
+      <label for="menu-btn" class="menu-btn"><i class="fa fa-bars"></i></label>
+      <input type="checkbox" id="menu-btn" />
       <ul class="navbar">
-        <li class="toggle"><i class="fa fa-bars"></i></li>
         <li class="item"><a href="index.html">Home</a></li>
         <li class="item has-dropdown">
-          <a tabindex="0">Education</a>
-        <i class="fa fa-caret-down"></i>
+            <button class="drop-btn"><a>Explore</a>
+            <i class="fa fa-caret-down"></i></button>
             <ul class="dropdown">
-              <li class="sub-item"><a href="explore.html#kids">For kids</a></li>
-              <li class="sub-item"><a href="explore.html#teachers">For teachers</a></li>
-              <li class="sub-item"><a href="explore.html#researchers">Researchers</a></li>
+              <li class="sub-item"><a href="education.html">Kids</a></li>
+              <li class="sub-item"><a href="education.html">Teachers</a></li>
+              <li class="sub-item"><a href="education.html">Researchers</a></li>
             </ul>
         </li>
         <li class="item has-dropdown">
-          <a tabindex="0">Exhibitions</a>
-         <i class="fa fa-caret-down"></i>
-            <ul class="dropdown">
-              <li class="sub-item"><a href="exhibition.html#cosmology">Cosmology</a></li>
-              <li class="sub-item"><a href="exhibition.html#evolution">Evolution</a></li>
-              <li class="sub-item"><a href="exhibition.html#biology">Biology and Medicine</a></li>
-              <li class="sub-item"><a href="exhibition.html#robotics">Robotics and AI</a></li>
-              <li class="sub-item"><a href="exhibition.html#ecology">Ecology</a></li>
-            </ul>
+            <button class="drop-btn">Exhibitions
+             <i class="fa fa-caret-down"></i></button>
+             <ul class="dropdown">
+               <li class="sub-item"><a href="exhibitions.html#cosmology">Cosmology</a></li>
+               <li class="sub-item"><a href="exhibitions.html#evolution">Evolution</a></li>
+               <li class="sub-item"><a href="exhibitions.html#biology">Biology and Medicine</a></li>
+               <li class="sub-item"><a href="exhibitions.html#robotics">Robotics and AI</a></li>
+               <li class="sub-item"><a href="exhibitions.html#ecology">Ecology</a></li>
+             </ul>
         </li>
         <li class="item has-dropdown">
-          <a tabindex="0">Events</a>
-         <i class="fa fa-caret-down"></i>
-            <ul class="dropdown">
-              <li class="sub-item"><a href="news.html">News</a></li>
-            </ul>
+           <button class="drop-btn">Events
+             <i class="fa fa-caret-down"></i></button>
+             <ul class="dropdown">
+               <li class="sub-item"><a href="events.html">News</a></li>
+             </ul>
         </li>
-      </ul><!--navbar-->
+    </ul>
+  </ul><!--navbar-->
     </div><!--site-header-->
     </header>
     <div class="wrapper">
@@ -106,8 +108,8 @@
         <div class="footer-content">
             Copyright &copy 2021<script>new Date().getFullYear()>2021&&document.write("-"+new
                 Date().getFullYear());</script> 
-          <div class="footer-category">
-            Get Involved
+          <div class="footer-category support">
+            <a>Get Involved</a>
           </div>
           <div>
             <p><a href="support.html#support">Support</a></p>

@@ -9,7 +9,7 @@
       content="At the Community Science Museum, we are proud to present our new interactive exhibitions 
       exploring the history of mankind, from the Stone age to the Space age"
     />
-    <title>Community Science Museum | Exhibition Spaces</title>
+    <title>Community Science Museum | Exhibitions</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="exhibitions">
     <header>
       <div class="site-header">
         <figure>
@@ -32,37 +32,39 @@
             <h1>Community Science Museum</h1>
         </div>
       </div>
+      <label for="menu-btn" class="menu-btn"><i class="fa fa-bars"></i></label>
+      <input type="checkbox" id="menu-btn" />
       <ul class="navbar">
-        <li class="toggle"><i class="fa fa-bars"></i></li>
         <li class="item"><a href="index.html">Home</a></li>
         <li class="item has-dropdown">
-          <a tabindex="0">Education</a>
-        <i class="fa fa-caret-down"></i>
+            <button class="drop-btn"><a>Explore</a>
+            <i class="fa fa-caret-down"></i></button>
             <ul class="dropdown">
-              <li class="sub-item"><a href="explore.html#kids">For kids</a></li>
-              <li class="sub-item"><a href="explore.html#teachers">For teachers</a></li>
-              <li class="sub-item"><a href="explore.html#researchers">Researchers</a></li>
+              <li class="sub-item"><a href="education.html">Kids</a></li>
+              <li class="sub-item"><a href="education.html">Teachers</a></li>
+              <li class="sub-item"><a href="education.html">Researchers</a></li>
             </ul>
         </li>
         <li class="item has-dropdown">
-          <a tabindex="0">Exhibitions</a>
-         <i class="fa fa-caret-down"></i>
-            <ul class="dropdown">
-              <li class="sub-item"><a href="exhibition.html#cosmology">Cosmology</a></li>
-              <li class="sub-item"><a href="exhibition.html#evolution">Evolution</a></li>
-              <li class="sub-item"><a href="exhibition.html#biology">Biology and Medicine</a></li>
-              <li class="sub-item"><a href="exhibition.html#robotics">Robotics and AI</a></li>
-              <li class="sub-item"><a href="exhibition.html#ecology">Ecology</a></li>
-            </ul>
+            <button class="drop-btn exhibitions"><a>Exhibitions</a>
+             <i class="fa fa-caret-down"></i></button>
+             <ul class="dropdown">
+               <li class="sub-item"><a href="exhibitions.html#cosmology">Cosmology</a></li>
+               <li class="sub-item"><a href="exhibitions.html#evolution">Evolution</a></li>
+               <li class="sub-item"><a href="exhibitions.html#biology">Biology and Medicine</a></li>
+               <li class="sub-item"><a href="exhibitions.html#robotics">Robotics and AI</a></li>
+               <li class="sub-item"><a href="exhibitions.html#ecology">Ecology</a></li>
+             </ul>
         </li>
         <li class="item has-dropdown">
-          <a tabindex="0">Events</a>
-         <i class="fa fa-caret-down"></i>
-            <ul class="dropdown">
-              <li class="sub-item"><a href="news.html">News</a></li>
-            </ul>
+           <button class="drop-btn">Events
+             <i class="fa fa-caret-down"></i></button>
+             <ul class="dropdown">
+               <li class="sub-item"><a href="events.html">News</a></li>
+             </ul>
         </li>
-      </ul><!--navbar-->
+    </ul>
+  </ul><!--navbar-->
     </div><!--site-header-->
     </header>
     <div class="wrapper">
@@ -76,7 +78,7 @@
       <section class="exhibition-content">
         <h2>Cosmology</h2>
         <img src="images/celso-405219_resized_1024x598.jpg" alt="Planets in space" />
-        <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
+        <p>education the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, educations the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
         <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p> 
     </section>
     <section class="exhibition-content" id="evolution">
@@ -91,7 +93,7 @@
         <h2>Biology and Medicine</h2>
         <img src="images/samuel-zeller-113381_resized.jpg" alt="Scientist looking through microscope" />
         <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. </p>
-        <p>For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant. 
+        <p>For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we education the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant. 
 
         </p>
         <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.
@@ -108,7 +110,7 @@
     <section class="exhibition-content" id="ecology">
         <h2>Ecology</h2>
         <img src="images/genoa-956405_1920_resized.jpg" alt="Model of giant ant" />
-        <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.</p>
+        <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists education how to create a sustainable future not just for humans but for the whole planet.</p>
         <p>In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
     </section>
     <aside>

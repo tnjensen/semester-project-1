@@ -90,6 +90,48 @@ figcaption::before, figcaption::after{
     margin-top: 10px;
     font-size: 1.4rem;
 }
+#menu-btn{
+    display: none;
+}
+#menu-btn:checked ~ .navbar .item {
+    display: block;
+}
+.menu-btn{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.drop-btn{
+    border: none;
+    outline: none;
+    background: none;
+    background-color: inherit;
+    color: #fffefe;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+.home .home a, .explore .explore a, .exhibitions .exhibitions a, .events .events a, .support .support a, .visit .visit a{
+    /* background: #fffefe;
+    color:#28697d; */
+    text-decoration: underline;
+    
+}
+.active{
+    background: #fffefe;
+    border-radius: 2px;
+    padding: 10px;
+    color: #333;
+}
+.active{
+    position: relative;
+    top: -10px;
+}
+.figure a{
+    background: none;
+    position: relative;
+    top: 0;
+}
 .navbar{
     margin-top: 30px;
     padding: 5px 0;
@@ -145,7 +187,7 @@ figcaption::before, figcaption::after{
     background: #fffefe;
     color: #28697d;
   }
-.dropdown-active .dropdown{
+.visible >.dropdown{
     display: block;
     background: #28697d;
     position: absolute;
@@ -322,7 +364,7 @@ footer {
     .wrapper h1{
         font-size: 1.7rem;
     }
-    .toggle{
+    .menu-btn, #menu-btn{
         display: none;
     }
     .item{
@@ -338,8 +380,11 @@ footer {
     .navbar li{
       margin-right: 10px; 
     }
-    .dropdown-active .dropdown{
-       margin-top: 20px;
+    .visible > .dropdown{
+        margin-top: 25px;
+       display: block;
+       background: #28697d;
+       color: #fffefe;
     }
     .search {
         margin: 0;
