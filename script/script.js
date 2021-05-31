@@ -1,3 +1,6 @@
+const dropbtns = document.querySelectorAll('.drop-btn');
+
+
 /* const menuItems = document.querySelectorAll('.item');
 
 for (var i = 0; i < menuItems.length; i++){
@@ -58,6 +61,9 @@ document.querySelectorAll('.has-dropdown').forEach(item =>
     item.addEventListener('click', event => {
         item.classList.toggle('visible');
        /*  console.log(item); */
+    })
+    item.addEventListener('keypress', event =>{
+      item.classList.toggle('visible');
     })
 })
 
