@@ -95,6 +95,11 @@ figcaption::before, figcaption::after{
 }
 #menu-btn:checked ~ .navbar .item {
     display: block;
+    background-color: #28697d;
+}
+#menu-btn:checked ~ .navbar{
+    position: absolute;
+    left: 15px;
 }
 .menu-btn{
     position: absolute;
@@ -117,28 +122,17 @@ figcaption::before, figcaption::after{
     text-decoration: underline;
     
 }
-.active{
-    background: #fffefe;
-    border-radius: 2px;
-    padding: 10px;
-    color: #333;
-}
-.active{
-    position: relative;
-    top: -10px;
-}
 .figure a{
     background: none;
     position: relative;
     top: 0;
 }
 .navbar{
-    margin-top: 30px;
-    padding: 5px 0;
+    margin-top: 35px;
 }
 .navbar li{
     text-align:left;
-    padding: 5px;
+    padding: 10px;
 }
 .navbar a {
   text-decoration: none;
@@ -181,20 +175,20 @@ figcaption::before, figcaption::after{
     display: none;
     list-style-type: none;
     padding: 5px;
-    z-index: 10;
+    border: 1px solid #FF9024;
 }
 .dropdown li a:hover {
-    background: #fffefe;
-    color: #28697d;
+    color: #fffefe;
+    background: #28697d;
   }
 .visible >.dropdown{
     display: block;
-    background: #28697d;
+    background: #fefefe;
     position: absolute;
     border-radius: 5px;
 }
-.active .item {
-    display: block;
+.visible > .dropdown a{
+    color: #28697d;
 }
 
 input[type="text"],
@@ -383,8 +377,8 @@ footer {
     .visible > .dropdown{
         margin-top: 25px;
        display: block;
-       background: #28697d;
-       color: #fffefe;
+       color: #28697d;
+       background: #fffefe;
     }
     .search {
         margin: 0;
