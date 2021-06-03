@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" aria-disabled="true" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="home">
@@ -75,7 +75,11 @@
     <h1>Welcome to our new exhibitions</h1>
       <main class="main-content home">
         <div class="hero">
-        <img src="images/exhibition-1863344_1920_resized_960x420.jpg" alt="exhibition room with rocket model" />
+          <picture>
+            <source media="(max-width: 649px)" srcset="images/exhibition-1863344_1920_resized_650x666.jpg">
+            <source media="(min-width: 650px)"  srcset="images/exhibition-1863344_1920_resized_960x420.jpg">
+            <img src="images/exhibition-1863344_1920_resized_960x420.jpg" alt="exhibition room with rocket model" />
+          </picture>
       </div>
         <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
         <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
