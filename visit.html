@@ -67,12 +67,18 @@
     </div><!--site-header-->
     </header>
     <div class="wrapper">
+      <form class="search">
+        <input
+          class="search-field"
+          placeholder="Search..."
+          type="search"
+          aria-label="search-field"
+        />
+        <a href="search.html" class="search-btn" title="search">
+          <i class="fa fa-search"></i>
+        </a>
+      </form>
         <h1>Visit</h1>
-        <form class="search">
-            <input class="search-field" placeholder="Search..." type="search" aria-label="search-field" />
-            <a href="search.html" class="search-btn" title="search">
-              <i class="fa fa-search"></i></a>
-        </form>
       <main class="main-content">
       <div class="visit-content" id="location">
         <h2>Location</h2>
@@ -143,57 +149,61 @@
             <h2>Shop</h2>
             <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to education science even after you’ve left the museum. </p>
         </div>  
-        <aside>
-            <div class="signup-form">
-                <h3>Sign up for our newsletter</h3>
-                <form>
-                  <input type="text" value="Name" title="Name"/>
-                  <input type="email" value="E-mail" title="Email"/>
-                  <input type="submit" name="submit" title="Sign up" value="Sign up">
-                </form>
-              </div><!-- signup-form -->
-      </aside>
       </main>
       </div>
       <footer class="footer">
         <div class="footer-content">
-            Copyright &copy; 2021<script>new Date().getFullYear()>2021&&document.write("-"+new
-                Date().getFullYear());</script> 
-          <div class="footer-category">
-            Get Involved
-          </div>
+          Copyright &copy; 2021
+          <script>
+            new Date().getFullYear() > 2021 &&
+              document.write("-" + new Date().getFullYear());
+          </script>
+          <div class="footer-category">Get Involved</div>
           <div>
             <p><a href="support.html#support">Support</a></p>
             <p><a href="support.html#volunteer">Volunteer</a></p>
             <p><a href="support.html#internships">Internships</a></p>
           </div>
-          <div class="footer-category visit-section">
-            Visit
+          <div class="footer-category">Visit</div>
+          <div>
+            <p><a href="visit.html#location">Location</a></p>
+            <p><a href="visit.html#admission">Admission</a></p>
+            <p><a href="visit.html#hours">Hours</a></p>
+            <p><a href="visit.html#accessibility">Accessibility</a></p>
+            <p><a href="visit.html#food">Food and Drink</a></p>
+            <p><a href="visit.html#shop">Shop</a></p>
           </div>
-          <div> 
-              <p><a href="visit.html#location">Location</a></p>
-              <p><a href="visit.html#admission">Admission</a></p>
-              <p><a href="visit.html#hours">Hours</a></p>
-              <p><a href="visit.html#accessibility">Accessibility</a></p>
-              <p><a href="visit.html#food">Food and Drink</a></p>
-              <p><a href="visit.html#shop">Shop</a></p>
+          <div class="footer-category">
+            <div class="signup-form">
+              Sign up for our newsletter
+              <form>
+                <input type="text"  placeholder="Name" title="Name" />
+                <input type="email"  placeholder="Email" title="Email" />
+                <input
+                  type="submit"
+                  name="submit"
+                  title="Sign up"
+                  value="Sign up"
+                />
+              </form>
+            </div>
           </div>
           <div class="footer-nav">
             <ul>
               <li>
-                <a href="https://www.instagram.com" aria-label="Instagram"
-                  ><i class="fa fa-instagram"></i
-                ></a>
+                <a href="https://www.instagram.com" aria-label="Instagram">
+                  <i class="fa fa-instagram"></i>
+                </a>
               </li>
               <li>
-                <a href="https://www.twitter.com" aria-label="Twitter"
-                  ><i class="fa fa-twitter"></i
-                ></a>
+                <a href="https://www.twitter.com" aria-label="Twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
               </li>
               <li>
-                <a href="https://www.facebook.com" aria-label="FaceBook"
-                  ><i class="fa fa-facebook"></i
-                ></a>
+                <a href="https://www.facebook.com" aria-label="FaceBook">
+                  <i class="fa fa-facebook"></i>
+                </a>
               </li>
             </ul>
           </div><!--footer-nav-->
