@@ -221,7 +221,7 @@ input[type="submit"]:hover {
 }
 input[type="text"]::placeholder,
 input[type="email"]::placeholder{
-  color: #fffefe;
+  color: #0a3945;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -305,6 +305,11 @@ input:focus:-moz-placeholder {
 /* .dropdown:hover .dropdown-content{
     display: block;
 } */
+
+.exhibition-content, .education-content{
+  max-width: 80%;
+  margin: 0 auto;
+}
 footer {
   background: #7acbe3;
   display: flex;
@@ -334,12 +339,12 @@ footer {
   text-transform: uppercase;
 }
 .signup-form input[type=text], .signup-form input[type=email] {
-  background-color: #28697d;
-  color: #fffefe;
+  background-color: #fffefe;
+  color: #0a3945;
   max-width: 130px;
 }
 .signup-form input[type=text]:focus, .signup-form input[type=email]:focus {
-  color: #fffefe;
+  color: #0a3945;
 }
 .footer-nav ul {
   list-style-type: none;
