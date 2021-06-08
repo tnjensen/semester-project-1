@@ -1,7 +1,15 @@
-const dropbtns = document.querySelectorAll('.drop-btn');
+const menuButton = document.querySelector('.menu-btn');
+const menu = document.querySelector('.navbar');
 
-
-/* const menuItems = document.querySelectorAll('.item');
+menuButton.onclick = function(){
+    if(menu.classList.contains('active')){
+      menu.classList.remove('active');
+    }
+    else{
+      menu.classList.add('active');
+    }
+}
+/*const dropbtns = document.querySelectorAll('.drop-btn');
 
 for (var i = 0; i < menuItems.length; i++){
     if(menuItems[i].textContent.toLowerCase() == document.title.split('|')[1].toLowerCase()){
