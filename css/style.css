@@ -406,6 +406,7 @@ footer {
   }
   .navbar {
     display: inline-flex;
+    position: relative;
     margin-top: 35px;
     margin-left: 10px;
   }
