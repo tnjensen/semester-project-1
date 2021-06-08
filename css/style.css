@@ -95,18 +95,22 @@ figcaption::after {
 #menu-btn {
   display: none;
 }
-#menu-btn:checked ~ .navbar .item {
+/* #menu-btn:checked ~ .navbar .item {
   display: block;
   background-color: #28697d;
 }
 #menu-btn:checked ~ .navbar {
   position: absolute;
   left: 15px;
-}
+} */
 .menu-btn {
   position: absolute;
   left: 20px;
   top: 10px;
+}
+.active > .item{
+  display: block;
+  background-color: #28697d;
 }
 .drop-btn {
   border: none;
