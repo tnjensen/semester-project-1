@@ -112,6 +112,10 @@ figcaption::after {
   display: block;
   background-color: #28697d;
 }
+.navbar{
+  position: absolute;
+  left: 20px;
+}
 .drop-btn {
   border: none;
   outline: none;
