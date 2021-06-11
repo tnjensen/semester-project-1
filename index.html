@@ -45,50 +45,66 @@
           </div>
         </div>
         <label for="menu-btn" class="menu-btn">
-          <i class="fa fa-bars"></i>
+          <i class="fa fa-bars" tabindex="1"></i>
         </label>
         <input type="checkbox" id="menu-btn" />
         <ul class="navbar">
-          <li class="item home"><a href="index.html">Home</a></li>
+          <li class="item home"><a href="index.html" tabindex="2">Home</a></li>
           <li class="item has-dropdown">
             <button class="drop-btn">Explore</button>
-            <i class="fa fa-caret-down" tabindex="0"></i>
+            <i class="fa fa-caret-down" tabindex="3"></i>
             <ul class="dropdown">
-              <li class="sub-item"><a href="education.html">Kids</a></li>
-              <li class="sub-item"><a href="education.html#teachers">Teachers</a></li>
-              <li class="sub-item"><a href="education.html#researchers">Researchers</a></li>
+              <li class="sub-item">
+                <a href="education.html#kids" tabindex="5">Kids</a>
+              </li>
+              <li class="sub-item">
+                <a href="education.html#teachers" tabindex="6">Teachers</a>
+              </li>
+              <li class="sub-item">
+                <a href="education.html#researchers" tabindex="7">
+                  Researchers
+                </a>
+              </li>
             </ul>
           </li>
           <li class="item has-dropdown">
             <button class="drop-btn">Exhibitions</button>
-            <i class="fa fa-caret-down" tabindex="0"></i>
+            <i class="fa fa-caret-down" tabindex="4"></i>
             <ul class="dropdown">
               <li class="sub-item">
-                <a href="exhibitions.html#cosmology">Cosmology</a>
+                <a href="exhibitions.html#cosmology" tabindex="8">Cosmology</a>
               </li>
               <li class="sub-item">
-                <a href="exhibitions.html#evolution">Evolution</a>
+                <a href="exhibitions.html#evolution" tabindex="9">Evolution</a>
               </li>
               <li class="sub-item">
-                <a href="exhibitions.html#biology">Biology and Medicine</a>
+                <a href="exhibitions.html#biology" tabindex="10">
+                  Biology and Medicine
+                </a>
               </li>
               <li class="sub-item">
-                <a href="exhibitions.html#robotics">Robotics and AI</a>
+                <a href="exhibitions.html#robotics" tabindex="11">
+                  Robotics and AI
+                </a>
               </li>
               <li class="sub-item">
-                <a href="exhibitions.html#ecology">Ecology</a>
+                <a href="exhibitions.html#ecology" tabindex="12">Ecology</a>
               </li>
             </ul>
           </li>
           <li class="item has-dropdown">
             <button class="drop-btn">Events</button>
-            <i class="fa fa-caret-down" tabindex="0"></i>
+            <i class="fa fa-caret-down" tabindex="5"></i>
             <ul class="dropdown">
-              <li class="sub-item"><a href="events.html">News</a></li>
+              <li class="sub-item">
+                <a href="events.html" tabindex="13">News</a>
+              </li>
             </ul>
           </li>
-        </ul><!--navbar-->
-      </div><!--site-header-->
+        </ul>
+        <!--navbar-->
+      </div>
+      <!--site-header-->
     </header>
     <div class="wrapper">
       <form class="search">
@@ -164,10 +180,10 @@
     <footer class="footer">
       <div class="footer-content">
         Copyright &copy; 2021
-      <script>
-        new Date().getFullYear() > 2021 &&
-          document.write("-" + new Date().getFullYear());
-      </script>
+        <script>
+          new Date().getFullYear() > 2021 &&
+            document.write("-" + new Date().getFullYear());
+        </script>
         <div class="footer-category">Get Involved</div>
         <div>
           <p><a href="support.html#support">Support</a></p>
@@ -187,8 +203,8 @@
           <div class="signup-form">
             Sign up for our newsletter
             <form>
-              <input type="text"  placeholder="Name" title="Name" />
-              <input type="email"  placeholder="Email" title="Email" />
+              <input type="text" placeholder="Name" title="Name" />
+              <input type="email" placeholder="Email" title="Email" />
               <input
                 type="submit"
                 name="submit"
@@ -216,8 +232,10 @@
               </a>
             </li>
           </ul>
-        </div><!--footer-nav-->
-      </div><!--footer-content-->
+        </div>
+        <!--footer-nav-->
+      </div>
+      <!--footer-content-->
     </footer>
     <script async src="script/script.js"></script>
   </body>

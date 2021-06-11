@@ -1,14 +1,77 @@
 const menuButton = document.querySelector('.menu-btn');
 const menu = document.querySelector('.navbar');
 
-menuButton.onclick = function(){
+
+/* Open the menu */ 
+menuButton.onclick = function(e){
+ 
     if(menu.classList.contains('active')){
       menu.classList.remove('active');
     }
     else{
       menu.classList.add('active');
     }
+    
 }
+
+/* Open the menu with keyboard */
+menuButton.addEventListener('keypress', function(){
+    menu.classList.toggle('active');
+})
+
+/* Open the menu dropdown elements */
+document.querySelectorAll('.has-dropdown').forEach(item =>
+  { 
+      item.addEventListener('click', event => {
+          item.classList.toggle('visible');
+      })
+      item.addEventListener('keypress', event =>{
+        item.classList.toggle('visible');
+      })
+  })
+
+function isClickOutside(e){
+    if(!e.target.closest('.navbar')){
+        menu.classList.toggle('active')
+    }
+}
+document.addEventListener('click', isClickOutside);
+
+/* function menuDropdown(event){
+  console.log(event.target);
+  if(!event.target.closest('.navbar')){
+    menu.classList.remove('active');
+  }
+} */
+
+/* document.addEventListener('click', menuDropdown, false); */
+/* menuButton.addEventListener('click', function(e){
+    if(!menu.classList.contains('active')){
+      menu.classList.add('active');
+    }  
+    else{
+      menu.classList.remove('active');
+    }
+}) */
+/* window.onclick = function(e){
+  if(!menu.classList.contains('active')){
+    menu.classList.add('active');
+  }  
+  else{
+    menu.classList.remove('active');
+  }
+
+} */
+/* function closeMenu(e){
+  let isClickInside = e.target;
+  console.log(e.target);
+    if(!isClickInside && menu.classList.contains('active')){
+      menu.classList.remove('active');
+     
+    }
+}
+
+document.addEventListener('click', closeMenu, false); */
 /*const dropbtns = document.querySelectorAll('.drop-btn');
 
 for (var i = 0; i < menuItems.length; i++){
@@ -64,17 +127,6 @@ var menuItems = parentDOM.getElementsByClassName('has-dropdown')[0]; */
     })
 }) */
 
-document.querySelectorAll('.has-dropdown').forEach(item =>
-{ 
-    item.addEventListener('click', event => {
-        item.classList.toggle('visible');
-       /*  console.log(item); */
-    })
-    item.addEventListener('keypress', event =>{
-      item.classList.toggle('visible');
-    })
-})
-
 /* const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".navbar"); */
 
@@ -128,9 +180,9 @@ const menu = document.querySelector(".navbar"); */
     */
   /* Event listener */
  /*  document.addEventListener("click", closedropdown, false); */
-/* const dropElements = document.querySelector('.navbar');
-const dropdownContent = document.querySelectorAll('.dropdown-content');
- */
+/* const dropElements = document.querySelector('.navbar');*/
+/* const dropdownContent = document.querySelectorAll('.dropdown'); */
+
 /* Shows/hides the dropdown of clicked menu button */
 /* function showdropdown(a){    
     a.getElementsByClassName('dropdown-content').classList.toggle('hidden');  
@@ -138,9 +190,9 @@ const dropdownContent = document.querySelectorAll('.dropdown-content');
 
 /* Closes the active menu when pressing escape */
 /* dropdownContent.forEach(function(event){
-    event.addEventListener('keyup', function(e){
+    event.addEventListener('keypress', function(e){
         if(e.keyCode === 27){
-            event.classList.toggle('hidden');  
+            event.classList.toggle('visible');  
         }
     })
 }) */
