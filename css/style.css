@@ -92,21 +92,9 @@ figcaption::after {
   text-align: center;
   margin-top: 10px;
 }
-#menu-btn {
-  display: none;
-}
-/* #menu-btn:checked ~ .navbar .item {
-  display: block;
-  background-color: #28697d;
-}
-#menu-btn:checked ~ .navbar {
-  position: absolute;
-  left: 15px;
-} */
 .menu-btn {
-  position: absolute;
-  left: 20px;
-  top: 10px;
+  border: 0;
+  color: #fffefe;
 }
 .active > .item{
   display: block;
@@ -132,8 +120,6 @@ figcaption::after {
 .events .events-btn,
 .support .support-section,
 .visit .visit-section {
-  /* background: #fffefe;
-    color:#28697d; */
   text-decoration: underline;
 }
 .figure a {
@@ -177,15 +163,6 @@ figcaption::after {
 .toggle {
   list-style-type: none;
 }
-/* .dropdown::after{
-    font-family: "Font Awesome 5 Free";
-    font-size: 1rem;
-    line-height: 16px;
-    font-weight: 900; 
-    padding-left: 5px;
-    content: "\f0d7";
-} */
-
 .dropdown {
   display: none;
   list-style-type: none;
@@ -395,8 +372,7 @@ footer {
     font-size: 1.7rem;
     flex: 0 0 100%;
   }
-  .menu-btn,
-  #menu-btn {
+  .menu-btn {
     display: none;
   }
   .item {
@@ -447,10 +423,6 @@ footer {
     flex: 1;
     order: 1;
   }
- /*  .exhibition-content, .education-content{
-    max-width: 90%;
-    margin: 0 auto;
-  } */
   footer {
     min-height: 130px;
   }
@@ -497,10 +469,6 @@ footer {
   .sidebar{
     margin-top: 20px;
   }
- /*  .exhibition-content, .education-content{
-    max-width: 80%;
-    margin: 0 auto;
-  } */
   .search {
     margin-right: 25px;
   }

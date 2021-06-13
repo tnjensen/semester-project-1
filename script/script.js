@@ -1,20 +1,20 @@
-const menuButton = document.querySelector('.menu-btn');
+const menuButton = document.querySelector('.fa-bars');
 const menu = document.querySelector('.navbar');
 
+/* Open the menu with keyboard */ 
+menuButton.addEventListener('keypress', function(){
+    menu.classList.add('active');
+})
 document.onclick = function(event){
-  if(!event.target.closest(".site-header")){
+  let element = event.target.closest('.menu-btn');
+  console.log(element);
+  if(!element){
     menu.classList.remove('active');
   }
   if(event.target.classList.contains("fa-bars")){
     menu.classList.add('active');
   }
 }
-
-/* Open the menu with keyboard */
-menuButton.addEventListener('keypress', function(){
-    menu.classList.toggle('active');
-})
-
 /* Open the menu dropdown elements */
 document.querySelectorAll('.has-dropdown').forEach(item =>
 { 
