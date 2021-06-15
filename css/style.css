@@ -74,7 +74,6 @@ figcaption::before,
 figcaption::after {
   content: "\22";
   font-size: 1.1rem;
-  padding: 1px;
 }
 .site-branding {
   text-align: left;
@@ -168,6 +167,7 @@ figcaption::after {
   list-style-type: none;
   padding: 5px;
   border: 1px solid #ff9024;
+  z-index: 10;
 }
 .dropdown li a:hover {
   color: #fffefe;
@@ -250,8 +250,8 @@ input:focus:-moz-placeholder {
   background-color: #ad6a28;
   position: relative;
   left: -5px;
-  padding: 1px 1px;
-  top: 2px;
+  padding: 1px;
+  top: 1px;
   border-radius: 2px;
   font-size: 1rem;
 }
@@ -393,6 +393,7 @@ footer {
     margin-top: 25px;
     display: block;
     color: #28697d;
+    top: 15px;
     background: #fffefe;
   }
   .sidebar{
@@ -410,6 +411,7 @@ footer {
   }
   .search-btn {
     font-size: 1.1rem;
+    top: 2px;
   }
   
   .main-content{
