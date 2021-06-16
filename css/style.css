@@ -388,10 +388,9 @@ footer {
     margin-right: 10px;
   }
   .visible > .dropdown {
-    margin-top: 25px;
+    margin-top: 30px;
     display: block;
     color: #28697d;
-    top: 15px;
     background: #fffefe;
   }
   .sidebar{
