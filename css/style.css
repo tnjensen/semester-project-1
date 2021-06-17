@@ -236,12 +236,12 @@ input:focus:-moz-placeholder {
 }
 .search {
   margin: 10px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   align-self: flex-end;
 }
 .search-field {
   max-width: 70px;
-  height: 22px;
+  height: 21px;
   font-size: 0.7rem;
 }
 .search-btn {
@@ -249,7 +249,7 @@ input:focus:-moz-placeholder {
   position: relative;
   left: -5px;
   padding: 1px;
-  top: 1px;
+  top: 2px;
   border-radius: 2px;
   font-size: 1rem;
 }
@@ -325,6 +325,12 @@ footer {
 .signup-form input[type=text]:focus, .signup-form input[type=email]:focus {
   color: #303030;
 }
+.footer{
+  margin: 0 auto;
+}
+.footer-content{
+  max-width: 80%;
+}
 .footer-nav ul {
   list-style-type: none;
 }
@@ -354,13 +360,13 @@ footer {
   font-size: 1rem;
   margin-right: 5px;
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 720px) {
   body {
     font-size: 1rem;
   }
   .site-header {
-    flex-direction: row;
-    justify-content: space-around;
+    /* flex-direction: row;
+    justify-content: space-around; */
   }
   .site-header h1 {
     margin-top: 10px;
@@ -382,7 +388,6 @@ footer {
     display: inline-flex;
     position: relative;
     margin-top: 35px;
-    margin-left: 10px;
   }
   .navbar li {
     margin-right: 10px;
@@ -395,22 +400,20 @@ footer {
   }
   .sidebar{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
   }
   .search {
-    font-size: 0.9rem;
-    
+    font-size: 0.9rem;  
   }
   .search-field {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    height: 22px;
     max-width: 100px;
   }
   .search-btn {
     font-size: 1.1rem;
     top: 2px;
   }
-  
   .main-content{
     max-width: 90%;
     margin: 0 auto;
@@ -430,7 +433,7 @@ footer {
     line-height: 1.1rem;
     padding: 25px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
   }
   .footer-category {
     margin: 0 15px 0 30px;
@@ -439,7 +442,7 @@ footer {
     margin: 1px;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 960px) {
   body {
     font-size: 1.1rem;
   }
@@ -451,20 +454,15 @@ footer {
     margin-top: 15px;
     font-size: 2rem;
   }
-  .header-content{
-    max-width: 80%;
-  }
   .navbar {
     display: inline-flex;
   }
   .main-content {
-    max-width: 75%;
     margin: 0 auto;
   }
   .wrapper h1 {
     font-size: 1.9rem;
   }
-
   .sidebar{
     margin-top: 20px;
   }
@@ -473,13 +471,11 @@ footer {
   }
   .search-field {
     padding: 5px;
-    max-width: 130px;
     font-size: 0.7rem;
   }
   .search-btn {
     font-size: 1.3rem;
     padding: 0px 5px;
-    position: relative;
     top: 3px;
     margin: 10px 0;
   }
