@@ -310,6 +310,9 @@ footer {
   font-size: 0.9rem;
   color: #303030;
 }
+.footer p{
+  padding-bottom: 5px;
+}
 .signup-form {
   max-width: 200px;
   float: left;
