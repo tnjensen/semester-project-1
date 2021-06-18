@@ -84,8 +84,8 @@ figcaption::after {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 10px;
   min-height: 100vh;
+  margin-bottom: 20px;
 }
 .wrapper h1 {
   text-align: center;
@@ -261,7 +261,7 @@ input:focus:-moz-placeholder {
   padding: 10px;
 }
 .main-content {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -416,6 +416,7 @@ footer {
     top: 2px;
   }
   .main-content{
+    max-width: 85%;
     margin: 0 auto;
   }
   .main-content p {
@@ -463,7 +464,7 @@ footer {
     display: inline-flex;
   }
   .main-content {
-    max-width: 75%;
+    max-width: 70%;
     margin: 0 auto;
   }
   .wrapper h1 {
