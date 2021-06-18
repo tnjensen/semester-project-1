@@ -274,6 +274,9 @@ input:focus:-moz-placeholder {
   margin-top: 15px;
   border-radius: 5px;
 }
+#teachers img{
+  border: 1px solid #333;
+}
 .explore-content,
 .exhibition-content,
 .events-content,
