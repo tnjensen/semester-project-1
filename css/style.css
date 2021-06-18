@@ -303,7 +303,6 @@ footer {
   margin: 0;
 }
 .footer-content {
-  margin: 0 25px 0 0;
   padding: 25px;
   display: flex;
   flex-direction: column;
