@@ -261,7 +261,7 @@ input:focus:-moz-placeholder {
   padding: 10px;
 }
 .main-content {
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -416,7 +416,7 @@ footer {
     top: 2px;
   }
   .main-content{
-    max-width: 85%;
+    max-width: 80%;
     margin: 0 auto;
   }
   .main-content p {
