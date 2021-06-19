@@ -25,10 +25,4 @@ document.querySelectorAll('.has-dropdown').forEach(item =>
       item.classList.toggle('visible');
     })
 })
-/* var links = document.querySelector('.item');
 
-for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href == document.URL) {
-        document.links[i].className = 'active';
-    }
-} */

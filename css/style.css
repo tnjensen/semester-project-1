@@ -142,11 +142,13 @@ figcaption::after {
 .item:hover {
   cursor: pointer;
 }
-.fa-bars {
-  font-size: 1.5rem;
+.menu-btn {
   order: 1;
   position: absolute;
   top: 20px;
+}
+.fa-bars{
+  font-size: 1.5rem;
 }
 .fa-bars:hover {
   cursor: pointer;
