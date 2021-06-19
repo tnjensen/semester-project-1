@@ -384,7 +384,7 @@ footer {
     font-size: 1.7rem;
     flex: 0 0 100%;
   }
-  .menu-btn {
+  .fa-bars {
     display: none;
   }
   .item {
