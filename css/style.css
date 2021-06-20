@@ -149,6 +149,7 @@ figcaption::after {
 }
 .fa-bars{
   font-size: 1.5rem;
+  max-height: 25px;
 }
 .fa-bars:hover {
   cursor: pointer;
