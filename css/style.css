@@ -89,7 +89,7 @@ figcaption::after {
 }
 .wrapper h1 {
   text-align: center;
-  margin-top: 10px;
+
 }
 .menu-btn {
   border: 0;
@@ -101,18 +101,10 @@ figcaption::after {
 }
 .navbar.active{
   position: absolute;
+  top: 50px;
   left: 20px;
 }
-.drop-btn {
-  border: none;
-  outline: none;
-  background: none;
-  background-color: inherit;
-  color: #fffefe;
-  font-family: inherit;
-  font-size: inherit;
-  margin: 0;
-}
+
 .home .home a,
 .explore .explore-btn,
 .exhibitions .exhibitions-btn,
@@ -127,7 +119,7 @@ figcaption::after {
   top: 0;
 }
 .navbar {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 .navbar li {
   text-align: left;
@@ -139,7 +131,7 @@ figcaption::after {
 .item {
   display: none;
 }
-.item:hover {
+.has-dropdown:hover {
   cursor: pointer;
 }
 .menu-btn {
@@ -382,7 +374,7 @@ footer {
     font-size: 1.8rem;
   }
   .wrapper h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     flex: 0 0 100%;
   }
   .fa-bars {
@@ -395,8 +387,6 @@ footer {
   }
   .navbar {
     display: inline-flex;
-    position: relative;
-    margin-top: 35px;
   }
   .navbar li {
     margin-right: 10px;
@@ -428,8 +418,17 @@ footer {
     margin: 0 auto;
   }
   .main-content p {
-    margin: 15px 0;
+    line-height: 1.4;
+    margin: 20px 0;
   }
+  .home .main-content img{
+    width: 116%;
+    margin-left: -8%;
+  }
+  .home .main-content p:first-of-type{
+    font-size: 150%;
+  }
+  
   .sidebar{
     flex: 1;
     order: 1;
@@ -470,13 +469,14 @@ footer {
   }
   .navbar {
     display: inline-flex;
+    margin-top: 14px;
   }
   .main-content {
     max-width: 70%;
     margin: 0 auto;
   }
   .wrapper h1 {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
   }
   .sidebar{
     margin-top: 20px;
