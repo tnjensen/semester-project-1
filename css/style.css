@@ -166,13 +166,13 @@ figcaption::after {
   color: #fffefe;
   background: #205f6d;
 }
-.visible > .dropdown {
+.visible ~ .dropdown {
   display: block;
   background: #fefefe;
   position: absolute;
   border-radius: 5px;
 }
-.visible > .dropdown a {
+.visible ~ .dropdown a {
   color: #205f6d;
 }
 
@@ -391,7 +391,7 @@ footer {
   .navbar li {
     margin-right: 10px;
   }
-  .visible > .dropdown {
+  .visible ~ .dropdown {
     margin-top: 30px;
     display: block;
     color: #205f6d;

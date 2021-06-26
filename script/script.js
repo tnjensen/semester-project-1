@@ -1,6 +1,6 @@
 const menu = document.querySelector('.navbar');
 const menuBtn = document.querySelector('.menu-btn');
-const subMenu = document.querySelectorAll('.item');
+const subMenu = document.querySelectorAll('.has-dropdown');
 
 /* Open the submenu elements with click or keyboard */
 document.querySelectorAll('.has-dropdown').forEach(item =>
