@@ -13,7 +13,7 @@ document.querySelectorAll('.has-dropdown').forEach(item =>
     })
 })
 
-/* Close menu when clicking outside */
+/* Open menu and close when clicking outside */
 document.onclick = function(event){
   let element = event.target.closest('.navbar');
   if(!element){
@@ -35,13 +35,11 @@ document.onclick = function(event){
 // Ensure only one dropdown open 
 document.addEventListener('click', function (event) {
 
-	// Loop through each item
 	for (var i = 0; i < subMenu.length; i++) {
 
 		// If the item is the one clicked, skip it
 		if (subMenu[i] === event.target) continue;
 
-		// Remove the .active class
 		subMenu[i].classList.remove('visible');
 	}
 })
