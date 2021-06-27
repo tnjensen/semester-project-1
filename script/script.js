@@ -2,7 +2,7 @@ const menu = document.querySelector('.navbar');
 const menuBtn = document.querySelector('.menu-btn');
 const subMenu = document.querySelectorAll('.has-dropdown');
 
-/* Open the submenu elements with click or keyboard */
+/* Open the dropdown elements with click or keyboard */
 document.querySelectorAll('.has-dropdown').forEach(item =>
 { 
     item.addEventListener('click', event => {
@@ -13,7 +13,7 @@ document.querySelectorAll('.has-dropdown').forEach(item =>
     })
 })
 
-/* Open menu and close when clicking outside */
+/* Open menu and close menu and dropdowns when clicking outside */
 document.onclick = function(event){
   let element = event.target.closest('.navbar');
   if(!element){
