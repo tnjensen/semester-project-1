@@ -34,7 +34,7 @@ h1 {
 }
 h2 {
   font-weight: lighter;
-  margin: 10px 0;
+  margin: 10px 0 5px 0;
 }
 h3 {
   font-weight: lighter;
@@ -419,7 +419,7 @@ footer {
   }
   .main-content p {
     line-height: 1.4;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
   }
   .home .main-content img{
     width: 116%;
