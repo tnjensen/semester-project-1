@@ -93,7 +93,12 @@ figcaption::after {
 }
 .menu-btn {
   border: 0;
+  background: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
   color: #fffefe;
+
 }
 .active > .item{
   display: block;
@@ -135,9 +140,7 @@ figcaption::after {
   cursor: pointer;
 }
 .menu-btn {
-  order: 1;
-  position: absolute;
-  top: 20px;
+  
 }
 .fa-bars{
   font-size: 1.5rem;
