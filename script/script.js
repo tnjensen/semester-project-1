@@ -13,16 +13,12 @@ document.querySelectorAll('.has-dropdown').forEach(item =>
     })
 })
 
-/* Open menu and close menu and dropdowns when clicking outside */
+/* Close menu and dropdowns when clicking outside */
 document.onclick = function(event){
-  let element = event.target.closest('.menu-btn');
-  if(!element){
+  /* let element = event.target.closest('.menu-btn');
+  if(!element && !menu.classList.contains('active')){
     menu.classList.remove('active');
-  }
-  let dropMenu = event.target.closest('.navbar');
-  if(dropMenu){
-    menu.classList.add('active');
-  }
+  } */
   let dropElement = event.target.closest('.item');
   if(!event.target){
     subMenu.classList.remove('visible');
@@ -31,9 +27,6 @@ document.onclick = function(event){
     for(i = 0; i < subMenu.length; i++){
       subMenu[i].classList.remove('visible');
     }  
-  }
-  if(event.target.classList.contains('has-dropdown')){
-    menu.classList.add('active');
   }
 }
 // Ensure only one dropdown open 
@@ -47,7 +40,7 @@ document.addEventListener('click', function (event) {
 		subMenu[i].classList.remove('visible');
 	}
 })
-
-menuBtn.onclick = function(event){
+//Toggle dropdown menu
+menuBtn.onclick = function(){
   menu.classList.toggle('active');
 }
