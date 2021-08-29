@@ -19,6 +19,10 @@ document.onclick = function(event){
   if(!element){
     menu.classList.remove('active');
   }
+  let dropMenu = event.target.closest('.navbar');
+  if(dropMenu){
+    menu.classList.add('active');
+  }
   let dropElement = event.target.closest('.item');
   if(!event.target){
     subMenu.classList.remove('visible');
