@@ -15,7 +15,7 @@ document.querySelectorAll('.has-dropdown').forEach(item =>
 
 /* Open menu and close menu and dropdowns when clicking outside */
 document.onclick = function(event){
-  let element = event.target.closest('.fa-bars');
+  let element = event.target.closest('.menu-btn');
   if(!element){
     menu.classList.remove('active');
   }
@@ -27,6 +27,9 @@ document.onclick = function(event){
     for(i = 0; i < subMenu.length; i++){
       subMenu[i].classList.remove('visible');
     }  
+  }
+  if(event.target.classList.contains('has-dropdown')){
+    menu.classList.add('active');
   }
 }
 // Ensure only one dropdown open 
