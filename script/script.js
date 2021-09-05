@@ -1,6 +1,8 @@
 const menu = document.querySelector('.navbar');
 const menuBtn = document.querySelector('.menu-btn');
-const subMenu = document.querySelectorAll('.has-dropdown');
+const dropItem = document.querySelectorAll('.has-dropdown');
+const dropBtn = document.querySelectorAll('.fa-caret-down');
+const subMenu = document.querySelectorAll('.dropdown');
 
 /* Open the dropdown elements with click or keyboard */
 document.querySelectorAll('.has-dropdown').forEach(item =>
@@ -12,35 +14,29 @@ document.querySelectorAll('.has-dropdown').forEach(item =>
       item.classList.toggle('visible');
     })
 })
-
-/* Close menu and dropdowns when clicking outside */
+menuBtn.addEventListener('keyin', function(){
+    menu.classList.toggle('active');
+})
+/* Open menu and close menu and dropdowns when clicking outside */
 document.onclick = function(event){
-  /* let element = event.target.closest('.menu-btn');
-  if(!element && !menu.classList.contains('active')){
-    menu.classList.remove('active');
-  } */
-  let dropElement = event.target.closest('.item');
-  if(!event.target){
-    subMenu.classList.remove('visible');
-  }
-  if(!dropElement){
-    for(i = 0; i < subMenu.length; i++){
-      subMenu[i].classList.remove('visible');
-    }  
+  if(event.target.classList.contains("fa-bars") || event.target.classList.contains("menu-btn") ){
+    menu.classList.add('active');
   }
 }
 // Ensure only one dropdown open 
 document.addEventListener('click', function (event) {
 
-	for (var i = 0; i < subMenu.length; i++) {
+	for (var i = 0; i < dropItem.length; i++) {
 
 		// If the item is the one clicked, skip it
-		if (subMenu[i] === event.target) continue;
+		if (dropItem[i] === event.target) continue;
 
-		subMenu[i].classList.remove('visible');
+		dropItem[i].classList.remove('visible');
 	}
 })
-//Toggle dropdown menu
-menuBtn.onclick = function(){
-  menu.classList.toggle('active');
-}
+window.addEventListener('mouseup', function(event){
+  if(event.target != menu && event.target.parentNode != menu && event.target.parentNode.parentNode != menu){
+    menu.classList.remove('active');
+  }
+})
+
