@@ -130,7 +130,7 @@ figcaption::after {
 }
 .navbar li {
   text-align: left;
-  
+  padding: 10px 5px;
 }
 .navbar a {
   text-decoration: none;
@@ -139,7 +139,7 @@ figcaption::after {
   display: none;
   position: relative;
 }
-.has-dropdown:hover, .item:hover {
+.has-dropdown:hover{
   cursor: pointer;
 }
 .fa-bars{
@@ -156,7 +156,7 @@ figcaption::after {
 }
 .sub-item a{
   display: block;
-  padding: 15px;
+  /* padding: 15px; */
 }
 .item,
 .toggle {
