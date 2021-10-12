@@ -89,6 +89,7 @@ figcaption::after {
 }
 .wrapper h1 {
   text-align: center;
+  margin-top: .5em;
 }
 .menu-btn {
   border: 0;
@@ -125,19 +126,20 @@ figcaption::after {
   top: 0;
 }
 .navbar {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 .navbar li {
   text-align: left;
-  padding: 15px;
+  
 }
 .navbar a {
   text-decoration: none;
 }
 .item {
   display: none;
+  position: relative;
 }
-.has-dropdown:hover {
+.has-dropdown:hover, .item:hover {
   cursor: pointer;
 }
 .fa-bars{
@@ -151,6 +153,10 @@ figcaption::after {
   background: none;
   color: #fffefe;
   border: none;
+}
+.sub-item a{
+  display: block;
+  padding: 15px;
 }
 .item,
 .toggle {
@@ -167,13 +173,14 @@ figcaption::after {
   color: #fffefe;
   background: #205f6d;
 }
-.visible ~ .dropdown {
+.visible > .dropdown {
   display: block;
   background: #fefefe;
   position: absolute;
+  top: 30px;
   border-radius: 5px;
 }
-.visible ~ .dropdown a {
+.visible > .dropdown a {
   color: #205f6d;
 }
 
@@ -430,8 +437,8 @@ footer {
     margin: 20px 0;
   }
   .home .main-content img{
-    width: 116%;
-    margin-left: -8%;
+ /*    width: 116%;
+    margin-left: -8%; */
   }
   .sidebar{
     flex: 1;
@@ -473,7 +480,7 @@ footer {
   }
   .navbar {
     display: inline-flex;
-    margin-top: 14px;
+    margin-top: 25px;
   }
   .main-content {
     max-width: 70%;
