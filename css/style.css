@@ -42,7 +42,7 @@ h3 {
 header {
   padding: 10px;
   text-align: center;
-  background:#86470b;
+  background: #86470b;
   min-height: 130px;
   color: #fffefe;
 }
@@ -89,7 +89,7 @@ figcaption::after {
 }
 .wrapper h1 {
   text-align: center;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 .menu-btn {
   border: 0;
@@ -99,11 +99,11 @@ figcaption::after {
   left: 20px;
   color: #fffefe;
 }
-.active > .item{
+.active > .item {
   display: block;
   background-color: #205f6d;
 }
-.navbar.active{
+.navbar.active {
   position: absolute;
   top: 50px;
   left: 20px;
@@ -117,7 +117,7 @@ figcaption::after {
 .visit .visit-section {
   text-decoration: underline;
 }
-.home .main-content p:first-of-type{
+.home .main-content p:first-of-type {
   font-size: 150%;
 }
 .figure a {
@@ -139,10 +139,16 @@ figcaption::after {
   display: none;
   position: relative;
 }
-.has-dropdown:hover{
+.has-dropdown:after{
+  content: '\f0dd';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+}
+.has-dropdown:hover {
   cursor: pointer;
 }
-.fa-bars{
+.fa-bars {
   font-size: 1.5rem;
   max-height: 25px;
 }
@@ -154,7 +160,7 @@ figcaption::after {
   color: #fffefe;
   border: none;
 }
-.sub-item a{
+.sub-item a {
   display: block;
   /* padding: 15px; */
 }
@@ -177,9 +183,13 @@ figcaption::after {
   display: block;
   background: #fefefe;
   position: absolute;
-  top: 30px;
+  top: 45px;
   border-radius: 5px;
 }
+/* .visible ~ .dropdown{
+  position: absolute;
+  top: 10px;
+} */
 .visible > .dropdown a {
   color: #205f6d;
 }
@@ -206,7 +216,7 @@ input[type="submit"]:hover {
   color: #fffefe;
 }
 input[type="text"]::placeholder,
-input[type="email"]::placeholder{
+input[type="email"]::placeholder {
   color: #030303;
 }
 ::-webkit-input-placeholder {
@@ -234,8 +244,8 @@ input:focus::-moz-placeholder {
 input:focus:-moz-placeholder {
   color: transparent !important;
 }
-.sidebar{
-   order: 1;
+.sidebar {
+  order: 1;
 }
 .search {
   margin: 10px;
@@ -268,7 +278,7 @@ input:focus:-moz-placeholder {
   /* max-width: 90%; */
   margin: 0 auto;
 }
-.main-content h2{
+.main-content h2 {
   padding-left: 15px;
 }
 .main-content p {
@@ -283,7 +293,7 @@ input:focus:-moz-placeholder {
   margin-top: 15px;
   border-radius: 5px;
 }
-#teachers img{
+#teachers img {
   border: 1px solid #333;
 }
 .education-content,
@@ -318,7 +328,7 @@ footer {
   font-size: 0.9rem;
   color: #030303;
 }
-.footer p{
+.footer p {
   padding-bottom: 5px;
 }
 .signup-form {
@@ -332,19 +342,21 @@ footer {
   margin: 20px 0 7px 0;
   text-transform: uppercase;
 }
-.signup-form input[type=text], .signup-form input[type=email] {
+.signup-form input[type="text"],
+.signup-form input[type="email"] {
   background-color: #fffefe;
   color: #303030;
   max-width: 130px;
   padding-left: 2px;
 }
-.signup-form input[type=text]:focus, .signup-form input[type=email]:focus {
+.signup-form input[type="text"]:focus,
+.signup-form input[type="email"]:focus {
   color: #303030;
 }
-.footer{
+.footer {
   margin: 0 auto;
 }
-.footer-content{
+.footer-content {
   max-width: 80%;
 }
 .footer-nav ul {
@@ -380,7 +392,7 @@ footer {
   body {
     font-size: 1rem;
   }
-  .site-header{
+  .site-header {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -412,12 +424,12 @@ footer {
     color: #205f6d;
     background: #fffefe;
   }
-  .sidebar{
+  .sidebar {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
   }
   .search {
-    font-size: 0.9rem;  
+    font-size: 0.9rem;
   }
   .search-field {
     font-size: 0.8rem;
@@ -428,7 +440,7 @@ footer {
     font-size: 1.1rem;
     top: 2px;
   }
-  .main-content{
+  .main-content {
     max-width: 90%;
     margin: 0 auto;
   }
@@ -436,11 +448,11 @@ footer {
     line-height: 1.4;
     margin: 20px 0;
   }
-  .home .main-content img{
- /*    width: 116%;
+  .home .main-content img {
+    /*    width: 116%;
     margin-left: -8%; */
   }
-  .sidebar{
+  .sidebar {
     flex: 1;
     order: 1;
   }
@@ -453,7 +465,6 @@ footer {
     padding: 25px;
     flex-direction: row;
     justify-content: center;
-    
   }
   .footer-category {
     margin: 0 15px 0 30px;
@@ -462,7 +473,7 @@ footer {
     margin: 1px;
     margin-left: 10px;
   }
-  .footer-nav li{
+  .footer-nav li {
     padding-bottom: 5px;
   }
 }
@@ -489,7 +500,7 @@ footer {
   .wrapper h1 {
     font-size: 2.5rem;
   }
-  .sidebar{
+  .sidebar {
     margin-top: 20px;
   }
   .search {
@@ -505,8 +516,8 @@ footer {
     top: 3px;
     margin: 10px 0;
   }
-  .signup-form input[type=text], .signup-form input[type=email] {
+  .signup-form input[type="text"],
+  .signup-form input[type="email"] {
     max-width: 150px;
-    
   }
 }

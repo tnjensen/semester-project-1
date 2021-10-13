@@ -1,7 +1,6 @@
 const menu = document.querySelector('.navbar');
 const menuBtn = document.querySelector('.menu-btn');
 const dropItem = document.querySelectorAll('.has-dropdown');
-const dropBtn = document.querySelectorAll('.fa-caret-down');
 const subMenu = document.querySelectorAll('.dropdown');
 
 /* Open the dropdown elements with click or keyboard */
