@@ -144,6 +144,8 @@ figcaption::after {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
+  position: relative;
+  top: -2px;
 }
 .has-dropdown:hover {
   cursor: pointer;
