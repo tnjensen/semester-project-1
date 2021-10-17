@@ -126,7 +126,7 @@ figcaption::after {
   top: 0;
 }
 .navbar {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .navbar li {
   text-align: left;
@@ -491,7 +491,7 @@ footer {
   }
   .navbar {
     display: inline-flex;
-    margin-top: 25px;
+    margin-top: 15px;
   }
   .main-content {
     max-width: 70%;
