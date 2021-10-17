@@ -48,9 +48,8 @@ menuBtn.onclick = function(event){
   }
 }
 window.addEventListener('mouseup', function(element){
-   var btn = menuBtn.closest('menu-btn');
-   if(!element.target){
-     console.log(element);
+   if(!element.target.closest('.menu-btn')){
      menu.classList.remove('active');
    }
 })
+
