@@ -13,15 +13,15 @@ document.querySelectorAll('.has-dropdown').forEach(item =>
       item.classList.toggle('visible');
     })
 })
-menuBtn.addEventListener('keyin', function(){
+/* menuBtn.addEventListener('keyin', function(){
     menu.classList.toggle('active');
-})
+}) */
 /* Open menu and close menu and dropdowns when clicking outside */
-document.onclick = function(event){
+/* document.onclick = function(event){
   if(event.target.classList.contains("fa-bars") || event.target.classList.contains("menu-btn") ){
     menu.classList.add('active');
   }
-}
+} */
 // Ensure only one dropdown open 
 document.addEventListener('click', function (event) {
 
@@ -33,9 +33,24 @@ document.addEventListener('click', function (event) {
 		dropItem[i].classList.remove('visible');
 	}
 })
-window.addEventListener('mouseup', function(event){
-  if(event.target != menu && event.target.parentNode != menu && event.target.parentNode.parentNode != menu){
+/* Close menu when clicking outside */
+/* window.addEventListener('mouseup', function(event){
+  if(event.target !== menu && event.target.parentNode !== menu && event.target.parentNode.parentNode !== menu){
     menu.classList.remove('active');
   }
+}) */
+/* Open and close menu */
+menuBtn.onclick = function(event){
+  if(menu.classList.contains('active')){
+    menu.classList.remove('active');
+  }else{
+    menu.classList.add('active');
+  }
+}
+window.addEventListener('mouseup', function(element){
+   var btn = menuBtn.closest('menu-btn');
+   if(!element.target){
+     console.log(element);
+     menu.classList.remove('active');
+   }
 })
-
