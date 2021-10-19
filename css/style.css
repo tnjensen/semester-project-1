@@ -139,12 +139,13 @@ figcaption::after {
   display: none;
   position: relative;
 }
-.has-dropdown:after{
+navbar ul li:after{
   content: '\f0dd';
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   position: relative;
+  text-decoration: none;
   top: -2px;
 }
 .has-dropdown:hover {
@@ -161,6 +162,11 @@ figcaption::after {
   background: none;
   color: #fffefe;
   border: none;
+}
+.fa-caret-down{
+  position: relative;
+  top: 15px;
+  left: -15px;
 }
 .sub-item a {
   display: block;
