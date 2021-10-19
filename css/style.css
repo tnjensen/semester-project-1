@@ -139,7 +139,7 @@ figcaption::after {
   display: none;
   position: relative;
 }
-navbar ul li:after{
+/* navbar ul li:after{
   content: '\f0dd';
   font-family: FontAwesome;
   font-weight: normal;
@@ -147,7 +147,7 @@ navbar ul li:after{
   position: relative;
   text-decoration: none;
   top: -2px;
-}
+} */
 .has-dropdown:hover {
   cursor: pointer;
 }
@@ -162,11 +162,6 @@ navbar ul li:after{
   background: none;
   color: #fffefe;
   border: none;
-}
-.fa-caret-down{
-  position: relative;
-  top: 15px;
-  left: -15px;
 }
 .sub-item a {
   display: block;
@@ -422,9 +417,6 @@ footer {
   }
   .navbar {
     display: inline-flex;
-  }
-  .navbar li {
-    margin-right: 10px;
   }
   .visible ~ .dropdown {
     margin-top: 35px;
