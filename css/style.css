@@ -110,11 +110,11 @@ figcaption::after {
 }
 
 .home .home a,
-.explore span,
-.exhibitions span,
-.events span,
-.support span,
-.visit span {
+.explore #dropdown,
+.exhibitions #dropdown,
+.events #dropdown,
+.support #current,
+.visit #current {
   text-decoration: underline;
 }
 .home .main-content p:first-of-type {
