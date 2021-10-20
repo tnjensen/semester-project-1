@@ -155,7 +155,7 @@ figcaption::after {
 }
 .sub-item a {
   display: block;
-  /* padding: 15px; */
+  padding: 5px;
 }
 .item,
 .toggle {
@@ -164,7 +164,6 @@ figcaption::after {
 .dropdown {
   display: none;
   list-style-type: none;
-  padding: 5px;
   border: 1px solid #ff9024;
   z-index: 10;
 }
