@@ -108,7 +108,6 @@ figcaption::after {
   top: 50px;
   left: 20px;
 }
-
 .home .home a,
 .explore #dropdown,
 .exhibitions #dropdown,
@@ -139,15 +138,6 @@ figcaption::after {
   display: none;
   position: relative;
 }
-/* navbar ul li:after{
-  content: '\f0dd';
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  position: relative;
-  text-decoration: none;
-  top: -2px;
-} */
 .has-dropdown:hover {
   cursor: pointer;
 }
@@ -162,9 +152,6 @@ figcaption::after {
   background: none;
   color: #fffefe;
   border: none;
-}
-.fa-caret-down{
-  z-index: 100;
 }
 .sub-item a {
   display: block;
@@ -192,11 +179,17 @@ figcaption::after {
   top: 45px;
   border-radius: 5px;
 }
-/* .visible ~ .dropdown{
-  position: absolute;
-  top: 10px;
-} */
 .visible > .dropdown a {
+  color: #205f6d;
+}
+.visible ~ .dropdown {
+  display: block;
+  background: #fefefe;
+  position: absolute;
+  top: 15px;
+  border-radius: 5px;
+}
+.visible ~ .dropdown a {
   color: #205f6d;
 }
 

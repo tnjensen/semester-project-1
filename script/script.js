@@ -2,6 +2,7 @@ const menu = document.querySelector('.navbar');
 const menuBtn = document.querySelector('.menu-btn');
 const dropItem = document.querySelectorAll('.has-dropdown');
 const subMenu = document.querySelectorAll('.dropdown');
+const currentDropItem = document.querySelector('#dropdown');
 
 /* Open the dropdown elements with click or keyboard */
 document.querySelectorAll('.has-dropdown').forEach(item =>
@@ -13,15 +14,13 @@ document.querySelectorAll('.has-dropdown').forEach(item =>
       item.classList.toggle('visible');
     })
 })
-/* menuBtn.addEventListener('keyin', function(){
-    menu.classList.toggle('active');
-}) */
-/* Open menu and close menu and dropdowns when clicking outside */
-/* document.onclick = function(event){
-  if(event.target.classList.contains("fa-bars") || event.target.classList.contains("menu-btn") ){
-    menu.classList.add('active');
-  }
-} */
+/* Open current dropdown elements  */
+/* document.querySelectorAll('#dropdown').forEach(item =>
+  { 
+      item.addEventListener('click', event => {
+          item.classList.add('visible');
+      })
+  }) */
 // Ensure only one dropdown open 
 document.addEventListener('click', function (event) {
 
