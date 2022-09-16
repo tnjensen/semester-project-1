@@ -38,4 +38,4 @@ https://wonderful-bhaskara-c3e8f0.netlify.app/index.html
 
 ## Contact
 
-[My Twitter page](https://twitter.com/ThomasNJensen1)
+[My LinkedIn page](https://www.linkedin.com/in/tnjensen09/)
