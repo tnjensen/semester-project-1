@@ -207,10 +207,11 @@ input[type="submit"] {
   color: #fffefe;
   margin: 10px 0 15px 0;
   border-radius: 4px;
-  background-color: #86470b;
+  border: none;
+  background-color: #aa6526;
 }
 input[type="submit"]:hover {
-  background-color: #ff9024;
+  background-color: #e18326;
   color: #fffefe;
 }
 input[type="text"]::placeholder,
@@ -371,7 +372,7 @@ footer {
 }
 .footer-nav ul li a:hover {
   text-decoration: underline;
-  color: #ad6a28;
+  color: #e18326;
 }
 .footer a {
   color: #303030;
