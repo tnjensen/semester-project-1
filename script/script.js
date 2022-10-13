@@ -3,6 +3,15 @@ const menuBtn = document.querySelector('.menu-btn');
 const dropItem = document.querySelectorAll('.has-dropdown');
 const subMenu = document.querySelectorAll('.dropdown');
 const currentDropItem = document.querySelector('#dropdown');
+const year = document.getElementById('year');
+
+let date = new Date().getFullYear();
+if( date > 2021){
+  year.innerHTML = `- `+ date;
+}else{
+  year.innerHTML = date;
+}
+ 
 
 /* Open the dropdown elements with click or keyboard */
 document.querySelectorAll('.has-dropdown').forEach(item =>
