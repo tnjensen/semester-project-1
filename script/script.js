@@ -3,11 +3,12 @@ const menuBtn = document.querySelector('.menu-btn');
 const dropItem = document.querySelectorAll('.has-dropdown');
 const subMenu = document.querySelectorAll('.dropdown');
 const currentDropItem = document.querySelector('#dropdown');
-const year = document.getElementById('year');
+const year = document.querySelector('#year');
+const createdYear = 2021; 
 
 let date = new Date().getFullYear();
-if( date > 2021){
-  year.innerHTML = `- `+ date;
+if( date > createdYear){
+  year.innerHTML =  `${createdYear} - ` + date;
 }else{
   year.innerHTML = date;
 }
